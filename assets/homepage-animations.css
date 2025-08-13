@@ -1,0 +1,314 @@
+/*
+ * Custom Homepage Animations CSS for Smart Ring Shopify Theme
+ * Optimized for performance and Shopify compatibility
+ */
+
+/* Base animation classes */
+.sr-animate-fade {
+  opacity: 0;
+  transition: opacity 0.8s ease-out;
+}
+
+.sr-animate-fade.sr-visible {
+  opacity: 1;
+}
+
+.sr-animate-slide-up {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.sr-animate-slide-up.sr-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.sr-animate-slide-left {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.sr-animate-slide-left.sr-visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.sr-animate-slide-right {
+  opacity: 0;
+  transform: translateX(50px);
+  transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.sr-animate-slide-right.sr-visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.sr-animate-scale {
+  opacity: 0;
+  transform: scale(0.8);
+  transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.sr-animate-scale.sr-visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Enhanced hover effects */
+.sr-hover-lift {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sr-hover-lift:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.sr-hover-scale {
+  transition: transform 0.3s ease;
+}
+
+.sr-hover-scale:hover {
+  transform: scale(1.05);
+}
+
+.sr-hover-glow {
+  transition: box-shadow 0.3s ease;
+}
+
+.sr-hover-glow:hover {
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.3);
+}
+
+/* Floating animations */
+@keyframes sr-float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+.sr-float {
+  animation: sr-float 6s ease-in-out infinite;
+}
+
+.sr-float-delayed {
+  animation: sr-float 6s ease-in-out infinite;
+  animation-delay: 2s;
+}
+
+/* Pulse animations */
+@keyframes sr-pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+.sr-pulse {
+  animation: sr-pulse 2s ease-in-out infinite;
+}
+
+/* Glow effects */
+@keyframes sr-glow {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+  }
+  50% {
+    box-shadow: 0 0 40px rgba(255, 255, 255, 0.3);
+  }
+}
+
+.sr-glow {
+  animation: sr-glow 3s ease-in-out infinite;
+}
+
+/* Specific component styles */
+.sr-hero-content {
+  animation: sr-float 6s ease-in-out infinite;
+}
+
+.sr-stats-counter {
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.sr-button-enhanced {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.sr-button-enhanced:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.sr-button-enhanced::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: width 0.3s ease, height 0.3s ease;
+}
+
+.sr-button-enhanced:hover::before {
+  width: 300px;
+  height: 300px;
+}
+
+/* Card enhancements */
+.sr-card {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.sr-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+}
+
+.sr-card-image {
+  transition: transform 0.5s ease;
+}
+
+.sr-card:hover .sr-card-image {
+  transform: scale(1.1);
+}
+
+/* Video enhancements */
+.sr-video-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+.sr-video-container:hover {
+  transform: scale(1.02);
+}
+
+.sr-video-play-button {
+  animation: sr-pulse 2s ease-in-out infinite;
+  transition: transform 0.3s ease;
+}
+
+.sr-video-container:hover .sr-video-play-button {
+  transform: scale(1.1);
+}
+
+/* Newsletter form enhancements */
+.sr-newsletter-form {
+  transition: all 0.3s ease;
+}
+
+.sr-newsletter-input {
+  transition: all 0.3s ease;
+}
+
+.sr-newsletter-input:focus {
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+  transform: scale(1.02);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .sr-animate-slide-up,
+  .sr-animate-slide-left,
+  .sr-animate-slide-right {
+    transform: translateY(20px);
+  }
+  
+  .sr-animate-slide-left.sr-visible,
+  .sr-animate-slide-right.sr-visible {
+    transform: translateX(0);
+  }
+  
+  @keyframes sr-float {
+    0%, 100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-8px);
+    }
+  }
+  
+  .sr-hover-lift:hover,
+  .sr-card:hover {
+    transform: translateY(-4px);
+  }
+}
+
+/* Reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  .sr-animate-fade,
+  .sr-animate-slide-up,
+  .sr-animate-slide-left,
+  .sr-animate-slide-right,
+  .sr-animate-scale,
+  .sr-float,
+  .sr-float-delayed,
+  .sr-pulse,
+  .sr-glow,
+  .sr-hero-content {
+    animation: none;
+    transition: none;
+  }
+  
+  .sr-hover-lift,
+  .sr-hover-scale,
+  .sr-card,
+  .sr-video-container {
+    transition: none;
+  }
+  
+  .sr-hover-lift:hover,
+  .sr-hover-scale:hover,
+  .sr-card:hover,
+  .sr-video-container:hover {
+    transform: none;
+  }
+}
+
+/* Staggered animation delays for multiple elements */
+.sr-stagger-1 { transition-delay: 0.1s; }
+.sr-stagger-2 { transition-delay: 0.2s; }
+.sr-stagger-3 { transition-delay: 0.3s; }
+.sr-stagger-4 { transition-delay: 0.4s; }
+.sr-stagger-5 { transition-delay: 0.5s; }
+.sr-stagger-6 { transition-delay: 0.6s; }
+
+/* Loading animation */
+@keyframes sr-loading {
+  0% { opacity: 0.5; }
+  50% { opacity: 1; }
+  100% { opacity: 0.5; }
+}
+
+.sr-loading {
+  animation: sr-loading 1.5s ease-in-out infinite;
+}
+
+/* Success animation */
+@keyframes sr-success {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+.sr-success {
+  animation: sr-success 0.5s ease-in-out;
+}

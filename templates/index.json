@@ -32,7 +32,7 @@
       "block_order": ["heading_zaQBEc", "text_twkrcU", "buttons_cNGBcm"],
       "settings": {
         "image": "shopify://shop_images/a-smart-ring-with-modern-appealing-look.png",
-        "image_overlay_opacity": 20,
+        "image_overlay_opacity": 15,
         "image_height": "large",
         "image_behavior": "zoom-in",
         "desktop_content_position": "middle-center",
@@ -51,15 +51,15 @@
           "type": "slide",
           "settings": {
             "image": "shopify://shop_images/a-smart-ring-with-modern-appealing-look.png",
-            "heading": "Revolutionary Health Tech",
-            "subheading": "Monitor your wellness with precision",
-            "button_label": "Discover More",
+            "heading": "Revolutionary Health Technology",
+            "subheading": "Monitor your wellness with medical-grade precision and elegant design",
+            "button_label": "Discover Innovation",
             "link": "shopify://collections/all",
             "button_style_secondary": false,
             "box_align": "middle-center",
             "show_text_box": false,
             "text_alignment": "center",
-            "image_overlay_opacity": 30,
+            "image_overlay_opacity": 25,
             "color_scheme": "background-1",
             "text_alignment_mobile": "center"
           }
@@ -68,27 +68,44 @@
           "type": "slide",
           "settings": {
             "image": "shopify://shop_images/electronics-and-accessories-natural-3-middle.jpg",
-            "heading": "Premium Design",
-            "subheading": "Where luxury meets innovation",
-            "button_label": "View Collection",
+            "heading": "Premium Craftsmanship",
+            "subheading": "Where luxury aesthetics meet cutting-edge health technology",
+            "button_label": "Explore Collection",
             "link": "shopify://collections",
             "button_style_secondary": false,
             "box_align": "middle-center",
             "show_text_box": false,
             "text_alignment": "center",
-            "image_overlay_opacity": 30,
+            "image_overlay_opacity": 25,
+            "color_scheme": "background-1",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_3": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/a-smart-ring-with-modern-appealing-look.png",
+            "heading": "Intelligent Wellness Insights",
+            "subheading": "AI-powered analytics transform your health data into actionable insights",
+            "button_label": "Learn More",
+            "link": "shopify://pages/technology",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 25,
             "color_scheme": "background-1",
             "text_alignment_mobile": "center"
           }
         }
       },
-      "block_order": ["slide_1", "slide_2"],
+      "block_order": ["slide_1", "slide_2", "slide_3"],
       "settings": {
         "layout": "full_bleed",
         "slide_height": "large",
         "slider_visual": "dots",
         "auto_rotate": true,
-        "change_slides_speed": 5,
+        "change_slides_speed": 4,
         "color_scheme": "background-1",
         "show_text_below": true
       }
@@ -99,35 +116,39 @@
         "column_1": {
           "type": "column",
           "settings": {
-            "title": "Advanced Sensors",
-            "text": "<p>Cutting-edge biometric sensors provide real-time health insights with medical-grade accuracy. Track heart rate, blood oxygen, and temperature continuously.</p>",
-            "link_label": "Learn More",
+            "image": "shopify://shop_images/icon-sensors.png",
+            "title": "Advanced Biometric Sensors",
+            "text": "<p>Cutting-edge PPG and ECG sensors provide real-time health insights with medical-grade accuracy. Track heart rate variability, blood oxygen saturation, and skin temperature continuously throughout your day.</p>",
+            "link_label": "Explore Technology",
             "link": "shopify://pages/technology"
           }
         },
         "column_2": {
           "type": "column",
           "settings": {
-            "title": "7-Day Battery Life",
-            "text": "<p>Ultra-efficient power management ensures week-long usage with just one charge. Smart power optimization adapts to your usage patterns.</p>",
-            "link_label": "Battery Tech",
+            "image": "shopify://shop_images/icon-battery.png",
+            "title": "Extended 7-Day Battery",
+            "text": "<p>Ultra-efficient power management with adaptive algorithms ensures week-long usage on a single charge. Smart power optimization automatically adjusts to your usage patterns for maximum efficiency.</p>",
+            "link_label": "Battery Specifications",
             "link": "shopify://pages/specifications"
           }
         },
         "column_3": {
           "type": "column",
           "settings": {
-            "title": "Waterproof Design",
-            "text": "<p>Premium materials and IPX8 rating make it perfect for any lifestyle and activity. Swim, shower, and live without limits.</p>",
-            "link_label": "Durability",
+            "image": "shopify://shop_images/icon-waterproof.png",
+            "title": "Premium Durability Design",
+            "text": "<p>Aerospace-grade titanium construction with IPX8 waterproof rating. Perfect for swimming, showering, and extreme sports. Built to withstand your most active lifestyle without compromise.</p>",
+            "link_label": "Durability Testing",
             "link": "shopify://pages/durability"
           }
         },
         "column_4": {
           "type": "column",
           "settings": {
-            "title": "Smart Analytics",
-            "text": "<p>AI-powered insights help you understand and optimize your health patterns. Personalized recommendations for better wellness.</p>",
+            "image": "shopify://shop_images/icon-ai.png",
+            "title": "AI-Powered Analytics",
+            "text": "<p>Machine learning algorithms analyze your health patterns to provide personalized recommendations. Get predictive insights about your wellness trends and receive proactive health suggestions.</p>",
             "link_label": "AI Features",
             "link": "shopify://pages/ai-features"
           }
@@ -135,26 +156,68 @@
       },
       "block_order": ["column_1", "column_2", "column_3", "column_4"],
       "settings": {
-        "title": "Why Choose Our Smart Ring?",
+        "title": "Why Choose Our Smart Ring Technology?",
         "heading_size": "h1",
-        "image_width": "full",
-        "image_ratio": "adapt",
+        "image_width": "third",
+        "image_ratio": "square",
         "columns_desktop": 4,
         "column_alignment": "center",
         "background_style": "primary",
         "color_scheme": "background-1",
         "columns_mobile": "1",
-        "swipe_on_mobile": false,
+        "swipe_on_mobile": true,
         "padding_top": 72,
-        "padding_bottom": 36
+        "padding_bottom": 48
+      }
+    },
+    "collage_showcase": {
+      "type": "collage",
+      "blocks": {
+        "collection_block": {
+          "type": "collection",
+          "settings": {
+            "collection": "all",
+            "image_padding": "no-overlap",
+            "color_scheme": "background-2"
+          }
+        },
+        "product_block": {
+          "type": "product",
+          "settings": {
+            "product": "",
+            "second_image": true,
+            "image_padding": "no-overlap",
+            "color_scheme": "background-2"
+          }
+        },
+        "video_block": {
+          "type": "video",
+          "settings": {
+            "cover_image": "shopify://shop_images/video-cover-premium.jpg",
+            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "description": "Smart Ring Technology in Action",
+            "image_padding": "no-overlap",
+            "color_scheme": "background-2"
+          }
+        }
+      },
+      "block_order": ["collection_block", "product_block", "video_block"],
+      "settings": {
+        "heading": "Discover Our Innovation Ecosystem",
+        "heading_size": "h1",
+        "desktop_layout": "left",
+        "mobile_layout": "collage",
+        "color_scheme": "background-1",
+        "padding_top": 48,
+        "padding_bottom": 72
       }
     },
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
-        "title": "Featured Products",
+        "title": "Premium Smart Ring Collection",
         "heading_size": "h1",
-        "description": "<p>Discover our premium collection of smart rings designed for the modern lifestyle. Each piece combines cutting-edge technology with elegant design.</p>",
+        "description": "<p>Discover our award-winning collection of smart rings, each meticulously designed to combine cutting-edge health technology with timeless elegance. Every piece represents the pinnacle of wearable innovation.</p>",
         "show_description": true,
         "description_style": "body",
         "collection": "all",
@@ -173,16 +236,17 @@
         "quick_add": "standard",
         "columns_mobile": "2",
         "swipe_on_mobile": true,
-        "padding_top": 36,
+        "padding_top": 48,
         "padding_bottom": 72
       }
     },
     "video_section": {
       "type": "video",
       "settings": {
-        "heading": "See It In Action",
+        "heading": "Experience the Future in Action",
         "heading_size": "h1",
-        "description": "<p>Watch how our smart ring seamlessly integrates into your daily routine and provides valuable health insights that matter.</p>",
+        "description": "<p>Watch how our revolutionary smart ring seamlessly integrates into your daily routine, providing continuous health insights that empower you to live your best life. See the technology that's changing wellness forever.</p>",
+        "cover_image": "shopify://shop_images/video-thumbnail-enhanced.jpg",
         "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
         "enable_video_looping": false,
         "full_width": false,
@@ -197,52 +261,91 @@
         "stat_1": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/stat-accuracy.png",
             "title": "99.9%",
-            "text": "<p><strong>Accuracy Rate</strong></p><p>Medical-grade precision in all health measurements</p>",
-            "link_label": "",
-            "link": ""
+            "text": "<p><strong>Clinical-Grade Accuracy</strong></p><p>Medical-grade precision validated by independent clinical studies and FDA-approved testing protocols</p>",
+            "link_label": "View Clinical Data",
+            "link": "shopify://pages/clinical-validation"
           }
         },
         "stat_2": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/stat-monitoring.png",
             "title": "24/7",
-            "text": "<p><strong>Continuous Monitoring</strong></p><p>Round-the-clock health tracking without interruption</p>",
-            "link_label": "",
-            "link": ""
+            "text": "<p><strong>Continuous Health Monitoring</strong></p><p>Round-the-clock health tracking with intelligent sleep detection and automatic workout recognition</p>",
+            "link_label": "Monitoring Features",
+            "link": "shopify://pages/health-tracking"
           }
         },
         "stat_3": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/stat-metrics.png",
             "title": "30+",
-            "text": "<p><strong>Health Metrics</strong></p><p>Comprehensive insights into your wellness journey</p>",
-            "link_label": "",
-            "link": ""
+            "text": "<p><strong>Comprehensive Health Metrics</strong></p><p>Track everything from heart rate variability to stress levels, providing a complete picture of your wellness</p>",
+            "link_label": "All Metrics",
+            "link": "shopify://pages/health-metrics"
           }
         },
         "stat_4": {
           "type": "column",
           "settings": {
-            "title": "7 Days",
-            "text": "<p><strong>Battery Life</strong></p><p>Week-long power for uninterrupted monitoring</p>",
-            "link_label": "",
-            "link": ""
+            "image": "shopify://shop_images/stat-battery.png",
+            "title": "7+ Days",
+            "text": "<p><strong>Extended Battery Performance</strong></p><p>Industry-leading battery life with fast-charging technology and intelligent power management</p>",
+            "link_label": "Power Specs",
+            "link": "shopify://pages/battery-technology"
           }
         }
       },
       "block_order": ["stat_1", "stat_2", "stat_3", "stat_4"],
       "settings": {
-        "title": "Trusted by 50,000+ Users Worldwide",
+        "title": "Trusted by 100,000+ Health Enthusiasts Worldwide",
         "heading_size": "h1",
-        "image_width": "full",
-        "image_ratio": "adapt",
+        "image_width": "third",
+        "image_ratio": "circle",
         "columns_desktop": 4,
         "column_alignment": "center",
         "background_style": "primary",
         "color_scheme": "background-2",
         "columns_mobile": "2",
         "swipe_on_mobile": false,
+        "padding_top": 72,
+        "padding_bottom": 72
+      }
+    },
+    "rich_text_cta": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_cta": {
+          "type": "heading",
+          "settings": {
+            "heading": "Transform Your Health Journey Today",
+            "heading_size": "h1"
+          }
+        },
+        "text_cta": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Join the wellness revolution with our cutting-edge smart ring technology. Experience the perfect fusion of style, comfort, and advanced health monitoring that adapts to your unique lifestyle.</p><p>Start your journey to better health with insights that matter, delivered through the most elegant wearable ever created.</p>"
+          }
+        },
+        "button_cta": {
+          "type": "button",
+          "settings": {
+            "button_label": "Start Your Wellness Journey",
+            "button_link": "shopify://collections/all",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": ["heading_cta", "text_cta", "button_cta"],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "accent-1",
+        "full_width": true,
         "padding_top": 72,
         "padding_bottom": 72
       }
@@ -280,8 +383,9 @@
         "testimonial_1": {
           "type": "column",
           "settings": {
-            "title": "Life-Changing Technology",
-            "text": "<p>\"This smart ring has completely transformed how I monitor my health. The insights are incredible and have helped me make better lifestyle choices!\"</p><p><strong>- Sarah M., Verified Buyer</strong></p>",
+            "image": "shopify://shop_images/testimonial-sarah.jpg",
+            "title": "Life-Changing Health Insights",
+            "text": "<p>\"This smart ring has completely revolutionized how I approach my health. The AI insights caught a potential issue before I even felt symptoms. It's like having a personal health guardian on my finger 24/7.\"</p><p><strong>- Sarah Mitchell, Verified Customer</strong></p><p><em>Fitness Enthusiast & Wellness Coach</em></p>",
             "link_label": "",
             "link": ""
           }
@@ -289,8 +393,9 @@
         "testimonial_2": {
           "type": "column",
           "settings": {
-            "title": "Sleek and Accurate",
-            "text": "<p>\"I love how it looks like regular jewelry but provides so much valuable health data. The battery life is amazing!\"</p><p><strong>- James K., Fitness Enthusiast</strong></p>",
+            "image": "shopify://shop_images/testimonial-james.jpg",
+            "title": "Elegant Technology",
+            "text": "<p>\"I love how it seamlessly blends with my professional wardrobe while providing incredibly detailed health data. The battery life is phenomenal, and the insights have helped me optimize my sleep and recovery.\"</p><p><strong>- James Chen, Verified Customer</strong></p><p><em>Technology Executive</em></p>",
             "link_label": "",
             "link": ""
           }
@@ -298,8 +403,9 @@
         "testimonial_3": {
           "type": "column",
           "settings": {
-            "title": "Best Investment",
-            "text": "<p>\"The AI insights are game-changing. It's like having a personal health coach on my finger 24/7.\"</p><p><strong>- Emily R., Tech Professional</strong></p>",
+            "image": "shopify://shop_images/testimonial-emily.jpg",
+            "title": "Best Health Investment",
+            "text": "<p>\"The predictive analytics are incredible. It helps me understand my body's patterns and make informed decisions about my wellness. The design is so elegant that people compliment it as jewelry!\"</p><p><strong>- Emily Rodriguez, Verified Customer</strong></p><p><em>Healthcare Professional</em></p>",
             "link_label": "",
             "link": ""
           }
@@ -307,10 +413,10 @@
       },
       "block_order": ["testimonial_1", "testimonial_2", "testimonial_3"],
       "settings": {
-        "title": "What Our Customers Say",
+        "title": "Real Stories from Our Community",
         "heading_size": "h1",
-        "image_width": "full",
-        "image_ratio": "adapt",
+        "image_width": "third",
+        "image_ratio": "circle",
         "columns_desktop": 3,
         "column_alignment": "center",
         "background_style": "primary",
@@ -327,33 +433,33 @@
         "heading_KRGrkL": {
           "type": "heading",
           "settings": {
-            "heading": "Luxury Meets Technology",
+            "heading": "Where Luxury Meets Innovation",
             "heading_size": "h0"
           }
         },
         "text_enhanced": {
           "type": "text",
           "settings": {
-            "text": "Crafted with premium materials and cutting-edge technology for the discerning individual who values both style and substance.",
+            "text": "Meticulously crafted with aerospace-grade materials and powered by breakthrough technology. Designed for those who refuse to compromise between sophistication and performance.",
             "text_style": "body"
           }
         },
         "buttons_qUFTyT": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "Explore Collection",
+            "button_label_1": "Explore Premium Collection",
             "button_link_1": "shopify://collections",
             "button_style_secondary_1": false,
-            "button_label_2": "",
-            "button_link_2": "",
+            "button_label_2": "Book Consultation",
+            "button_link_2": "shopify://pages/consultation",
             "button_style_secondary_2": true
           }
         }
       },
       "block_order": ["heading_KRGrkL", "text_enhanced", "buttons_qUFTyT"],
       "settings": {
-        "image": "shopify://shop_images/electronics-and-accessories-natural-3-middle.jpg",
-        "image_overlay_opacity": 30,
+        "image": "shopify://shop_images/luxury-banner-enhanced.jpg",
+        "image_overlay_opacity": 35,
         "image_height": "medium",
         "image_behavior": "zoom-in",
         "desktop_content_position": "middle-right",
@@ -370,8 +476,8 @@
       "settings": {
         "color_scheme": "inverse",
         "full_width": true,
-        "padding_top": 52,
-        "padding_bottom": 52
+        "padding_top": 60,
+        "padding_bottom": 60
       }
     },
     "image_with_text_cUp9Di": {
@@ -380,29 +486,29 @@
         "heading_fG8KWq": {
           "type": "heading",
           "settings": {
-            "heading": "Our Mission",
+            "heading": "Our Innovation Mission",
             "heading_size": "h1"
           }
         },
         "text_N7Pyhg": {
           "type": "text",
           "settings": {
-            "text": "<p>We believe that health monitoring should be seamless, stylish, and sophisticated. Our mission is to create wearable technology that doesn't compromise on design while delivering exceptional functionality.</p><p>Founded by health tech innovators, we're committed to empowering individuals with the insights they need to live healthier, more informed lives.</p>",
+            "text": "<p>We believe that health monitoring should be seamless, sophisticated, and beautifully integrated into your lifestyle. Our mission is to create wearable technology that enhances your wellness journey without compromising on elegance or functionality.</p><p>Founded by a team of health technology innovators, biomedical engineers, and design visionaries, we're committed to empowering individuals with the precise insights they need to live healthier, more informed lives. Every product reflects our dedication to excellence and innovation.</p>",
             "text_style": "body"
           }
         },
         "button_DJHkk6": {
           "type": "button",
           "settings": {
-            "button_label": "Our Story",
+            "button_label": "Discover Our Story",
             "button_link": "shopify://pages/about",
             "button_style_secondary": false
           }
         }
-    },
+      },
       "block_order": ["heading_fG8KWq", "text_N7Pyhg", "button_DJHkk6"],
       "settings": {
-        "image": "shopify://shop_images/electronics-and-accessories-natural-5-bottom.jpg",
+        "image": "shopify://shop_images/mission-story-enhanced.jpg",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "text_first",
@@ -421,10 +527,11 @@
     "image_banner_mBqgA9",
     "slideshow_premium",
     "multicolumn_features",
+    "collage_showcase",
     "featured_collection",
     "video_section",
     "multicolumn_stats",
-    "rich_text_kapxtX",
+    "rich_text_cta",
     "multicolumn_testimonials",
     "image_banner_w4DFXc",
     "newsletter_signup",
