@@ -1,6 +1,6 @@
 /**
  * Smart Ring Homepage Animation Initializer
- * Automatically applies animation classes to homepage elements
+ * Automatically applies animation classes to homepage elements.
  */
 
 document.addEventListener('DOMContentLoaded', function() {
