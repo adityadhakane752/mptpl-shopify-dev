@@ -350,33 +350,6 @@
         "padding_bottom": 72
       }
     },
-    "rich_text_kapxtX": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_CDkg4j": {
-          "type": "heading",
-          "settings": {
-            "heading": "Your Health Journey Starts Here",
-            "heading_size": "h1"
-          }
-        },
-        "text_block": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Join thousands of health-conscious individuals who have transformed their wellness journey with our smart ring technology. Monitor, analyze, and optimize your health like never before.</p><p>Experience the perfect blend of style and substance with our award-winning wearable technology.</p>"
-          }
-        }
-      },
-      "block_order": ["heading_CDkg4j", "text_block"],
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "accent-1",
-        "full_width": true,
-        "padding_top": 72,
-        "padding_bottom": 72
-      }
-    },
     "multicolumn_testimonials": {
       "type": "multicolumn",
       "blocks": {
