@@ -1,1 +1,366 @@
 {"sections":{"image_banner_mBqgA9":{"type":"image-banner","blocks":{"heading_zaQBEc":{"type":"heading","settings":{"heading":"Track Your Wellness Effortlessly","heading_size":"h0"}},"text_twkrcU":{"type":"text","settings":{"text":"Experience the future of health monitoring with our premium smart ring. Seamlessly track your vitals, sleep patterns, and activity levels with unmatched precision and elegance.","text_style":"body"}},"buttons_cNGBcm":{"type":"buttons","settings":{"button_label_1":"Shop Collection","button_link_1":"shopify:\/\/collections\/all","button_style_secondary_1":false,"button_label_2":"Watch Demo","button_link_2":"#video-section","button_style_secondary_2":true}}},"block_order":["heading_zaQBEc","text_twkrcU","buttons_cNGBcm"],"settings":{"image":"shopify:\/\/shop_images\/a-smart-ring-with-a-very-interesting-appearance.png","image_overlay_opacity":20,"image_height":"large","image_behavior":"zoom-in","desktop_content_position":"middle-center","desktop_content_alignment":"center","show_text_box":false,"color_scheme":"accent-2","stack_images_on_mobile":true,"mobile_content_alignment":"center","show_text_below":true},"custom_css":["@keyframes float { 0%, 100% { transform: translateY(0px); } 50% { transform: translateY(-10px); } }",".banner__content { animation: float 3s ease-in-out infinite; }","@keyframes fadeInUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }",".banner__heading, .banner__text, .banner__buttons { animation: fadeInUp 0.8s ease-out forwards; }",".banner__text { animation-delay: 0.3s; }",".banner__buttons { animation-delay: 0.6s; }"]},"slideshow_premium":{"type":"slideshow","blocks":{"slide_1":{"type":"slide","settings":{"image":"shopify:\/\/shop_images\/a-smart-ring-with-a-very-interesting-appearance.png","heading":"Revolutionary Health Tech","subheading":"Monitor your wellness with precision","button_label":"Discover More","link":"shopify:\/\/collections\/all","button_style_secondary":false,"box_align":"middle-center","show_text_box":false,"text_alignment":"center","image_overlay_opacity":30,"color_scheme":"background-1","text_alignment_mobile":"center"}},"slide_2":{"type":"slide","settings":{"image":"shopify:\/\/shop_images\/electronics-and-accessories-natural-3-middle.jpg","heading":"Premium Design","subheading":"Where luxury meets innovation","button_label":"View Collection","link":"shopify:\/\/collections","button_style_secondary":false,"box_align":"middle-center","show_text_box":false,"text_alignment":"center","image_overlay_opacity":30,"color_scheme":"background-1","text_alignment_mobile":"center"}}},"block_order":["slide_1","slide_2"],"settings":{"layout":"full_bleed","slide_height":"large","slider_visual":"dots","auto_rotate":true,"change_slides_speed":5,"color_scheme":"background-1","show_text_below":true}},"multicolumn_features":{"type":"multicolumn","blocks":{"column_1":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/icon-sensors.png","title":"Advanced Sensors","text":"<p>Cutting-edge biometric sensors provide real-time health insights with medical-grade accuracy. Track heart rate, blood oxygen, and temperature continuously.<\/p>","link_label":"Learn More","link":"shopify:\/\/pages\/technology","image_width":"third","image_ratio":"adapt","image_height":"adapt"}},"column_2":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/icon-battery.png","title":"7-Day Battery Life","text":"<p>Ultra-efficient power management ensures week-long usage with just one charge. Smart power optimization adapts to your usage patterns.<\/p>","link_label":"Battery Tech","link":"shopify:\/\/pages\/specifications","image_width":"third","image_ratio":"adapt","image_height":"adapt"}},"column_3":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/icon-waterproof.png","title":"Waterproof Design","text":"<p>Premium materials and IPX8 rating make it perfect for any lifestyle and activity. Swim, shower, and live without limits.<\/p>","link_label":"Durability","link":"shopify:\/\/pages\/durability","image_width":"third","image_ratio":"adapt","image_height":"adapt"}},"column_4":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/icon-ai.png","title":"Smart Analytics","text":"<p>AI-powered insights help you understand and optimize your health patterns. Personalized recommendations for better wellness.<\/p>","link_label":"AI Features","link":"shopify:\/\/pages\/ai-features","image_width":"third","image_ratio":"adapt","image_height":"adapt"}}},"block_order":["column_1","column_2","column_3","column_4"],"settings":{"title":"Why Choose Our Smart Ring?","heading_size":"h1","text_alignment":"center","layout":"grid","columns_desktop":4,"color_scheme":"background-1","columns_mobile":"1","swipe_on_mobile":false,"padding_top":72,"padding_bottom":36},"custom_css":["@keyframes slideInFromLeft { from { opacity: 0; transform: translateX(-50px); } to { opacity: 1; transform: translateX(0); } }","@keyframes slideInFromRight { from { opacity: 0; transform: translateX(50px); } to { opacity: 1; transform: translateX(0); } }",".multicolumn-card:nth-child(odd) { animation: slideInFromLeft 0.8s ease-out; }",".multicolumn-card:nth-child(even) { animation: slideInFromRight 0.8s ease-out; }",".multicolumn-card { transition: transform 0.3s ease, box-shadow 0.3s ease; }",".multicolumn-card:hover { transform: translateY(-10px); box-shadow: 0 20px 40px rgba(0,0,0,0.1); }"]},"collage_showcase":{"type":"collage","blocks":{"collection_1":{"type":"collection","settings":{"collection":"all","image_padding":"no-overlap","color_scheme":"background-2"}},"product_1":{"type":"product","settings":{"product":"","second_image":false,"image_padding":"no-overlap","color_scheme":"background-2"}},"video_1":{"type":"video","settings":{"cover_image":"shopify:\/\/shop_images\/video-cover.png","video_url":"https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc","description":"Smart Ring in Action","image_padding":"no-overlap","color_scheme":"background-2"}}},"block_order":["collection_1","product_1","video_1"],"settings":{"heading":"Discover Our World","heading_size":"h1","desktop_layout":"left","mobile_layout":"collage","color_scheme":"background-1","padding_top":36,"padding_bottom":72}},"featured_collection":{"type":"featured-collection","custom_css":["@keyframes popIn { from { opacity: 0; transform: scale(0.8); } to { opacity: 1; transform: scale(1); } }",".card-wrapper { animation: popIn 0.6s ease-out; transition: transform 0.3s ease; }",".card-wrapper:hover { transform: scale(1.05); }",".product-card-wrapper { transition: all 0.3s ease; }",".product-card-wrapper:hover { box-shadow: 0 15px 35px rgba(0,0,0,0.1); transform: translateY(-5px); }"],"settings":{"collection":"all","products_to_show":8,"title":"Featured Products","heading_size":"h1","description":"<p>Discover our premium collection of smart rings designed for the modern lifestyle. Each piece combines cutting-edge technology with elegant design.<\/p>","show_description":true,"description_style":"body","columns_desktop":4,"enable_desktop_slider":true,"full_width":false,"show_view_all":true,"view_all_style":"solid","color_scheme":"background-1","image_ratio":"square","image_shape":"default","show_secondary_image":true,"show_vendor":false,"show_rating":true,"quick_add":"standard","columns_mobile":"2","swipe_on_mobile":true,"padding_top":36,"padding_bottom":72}},"video_section":{"type":"video","settings":{"heading":"See It In Action","heading_size":"h1","description":"<p>Watch how our smart ring seamlessly integrates into your daily routine and provides valuable health insights that matter.<\/p>","cover_image":"shopify:\/\/shop_images\/video-thumbnail.png","video_url":"https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc","full_width":false,"color_scheme":"accent-1","padding_top":72,"padding_bottom":72},"custom_css":["@keyframes pulse { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.05); } }",".deferred-media__poster { transition: transform 0.3s ease; }",".deferred-media__poster:hover { transform: scale(1.02); animation: pulse 2s infinite; }"]},"rich_text_stats":{"type":"rich-text","blocks":{"heading_stats":{"type":"heading","settings":{"heading":"Trusted by 50,000+ Users Worldwide","heading_size":"h1"}},"text_stats":{"type":"text","settings":{"text":"<div class=\"stats-grid\"><div class=\"stat-item\"><h3>99.9%</h3><p>Accuracy Rate</p><\/div><div class=\"stat-item\"><h3>24\/7</h3><p>Continuous Monitoring<\/p><\/div><div class=\"stat-item\"><h3>30+</h3><p>Health Metrics<\/p><\/div><div class=\"stat-item\"><h3>7 Days</h3><p>Battery Life<\/p><\/div><\/div>"}}},"block_order":["heading_stats","text_stats"],"settings":{"desktop_content_position":"center","content_alignment":"center","color_scheme":"background-2","full_width":true,"padding_top":72,"padding_bottom":72},"custom_css":[".stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; margin-top: 2rem; }",".stat-item { text-align: center; padding: 1.5rem; }",".stat-item h3 { font-size: 3rem; font-weight: bold; margin-bottom: 0.5rem; color: #fff; }",".stat-item p { font-size: 1.1rem; opacity: 0.9; }","@keyframes countUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }",".stat-item { animation: countUp 0.8s ease-out; }"]},"rich_text_kapxtX":{"type":"rich-text","blocks":{"heading_CDkg4j":{"type":"heading","settings":{"heading":"Your Health Journey Starts Here","heading_size":"h1"}},"text_block":{"type":"text","settings":{"text":"<p>Join thousands of health-conscious individuals who have transformed their wellness journey with our smart ring technology. Monitor, analyze, and optimize your health like never before.<\/p><p>Experience the perfect blend of style and substance with our award-winning wearable technology.<\/p>"}}},"block_order":["heading_CDkg4j","text_block"],"settings":{"desktop_content_position":"center","content_alignment":"center","color_scheme":"accent-1","full_width":true,"padding_top":72,"padding_bottom":72},"custom_css":["@keyframes textGlow { 0%, 100% { text-shadow: 0 0 5px rgba(255,255,255,0.1); } 50% { text-shadow: 0 0 20px rgba(255,255,255,0.3); } }",".rich-text__heading { animation: textGlow 3s ease-in-out infinite; }"]},"multicolumn_testimonials":{"type":"multicolumn","blocks":{"testimonial_1":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/testimonial-1.jpg","title":"Life-Changing Technology","text":"<p>\"This smart ring has completely transformed how I monitor my health. The insights are incredible and have helped me make better lifestyle choices!\"<\/p><p><strong>- Sarah M., Verified Buyer<\/strong><\/p>","link_label":"","link":"","image_width":"third","image_ratio":"circle","image_height":"adapt"}},"testimonial_2":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/testimonial-2.jpg","title":"Sleek and Accurate","text":"<p>\"I love how it looks like regular jewelry but provides so much valuable health data. The battery life is amazing!\"<\/p><p><strong>- James K., Fitness Enthusiast<\/strong><\/p>","link_label":"","link":"","image_width":"third","image_ratio":"circle","image_height":"adapt"}},"testimonial_3":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/testimonial-3.jpg","title":"Best Investment","text":"<p>\"The AI insights are game-changing. It's like having a personal health coach on my finger 24\/7.\"<\/p><p><strong>- Emily R., Tech Professional<\/strong><\/p>","link_label":"","link":"","image_width":"third","image_ratio":"circle","image_height":"adapt"}}},"block_order":["testimonial_1","testimonial_2","testimonial_3"],"settings":{"title":"What Our Customers Say","heading_size":"h1","text_alignment":"center","layout":"grid","columns_desktop":3,"color_scheme":"background-2","columns_mobile":"1","swipe_on_mobile":true,"padding_top":72,"padding_bottom":72},"custom_css":["@keyframes testimonialSlide { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }",".multicolumn-list__item { animation: testimonialSlide 0.8s ease-out; }",".multicolumn-list__item:nth-child(2) { animation-delay: 0.2s; }",".multicolumn-list__item:nth-child(3) { animation-delay: 0.4s; }",".multicolumn-card { transition: transform 0.3s ease; }",".multicolumn-card:hover { transform: scale(1.03); }"]},"image_banner_w4DFXc":{"type":"image-banner","blocks":{"heading_KRGrkL":{"type":"heading","settings":{"heading":"Luxury Meets Technology","heading_size":"h0"}},"text_enhanced":{"type":"text","settings":{"text":"Crafted with premium materials and cutting-edge technology for the discerning individual who values both style and substance.","text_style":"body"}},"buttons_qUFTyT":{"type":"buttons","settings":{"button_label_1":"Explore Collection","button_link_1":"shopify:\/\/collections","button_style_secondary_1":false,"button_label_2":"","button_link_2":"","button_style_secondary_2":true}}},"block_order":["heading_KRGrkL","text_enhanced","buttons_qUFTyT"],"settings":{"image":"shopify:\/\/shop_images\/electronics-and-accessories-natural-3-middle.jpg","image_overlay_opacity":30,"image_height":"medium","image_behavior":"zoom-in","desktop_content_position":"middle-right","desktop_content_alignment":"right","show_text_box":false,"color_scheme":"accent-2","stack_images_on_mobile":true,"mobile_content_alignment":"center","show_text_below":true},"custom_css":["@keyframes slideInRight { from { opacity: 0; transform: translateX(50px); } to { opacity: 1; transform: translateX(0); } }",".banner__content { animation: slideInRight 1s ease-out; }"]},"newsletter_signup":{"type":"newsletter","settings":{"color_scheme":"inverse","full_width":true,"padding_top":52,"padding_bottom":52},"custom_css":["@keyframes newsletterGlow { 0%, 100% { box-shadow: 0 0 20px rgba(255,255,255,0.1); } 50% { box-shadow: 0 0 40px rgba(255,255,255,0.2); } }",".newsletter-form__field-wrapper { animation: newsletterGlow 3s ease-in-out infinite; }",".newsletter-form__button { transition: transform 0.3s ease; }",".newsletter-form__button:hover { transform: scale(1.05); }"]},"image_with_text_cUp9Di":{"type":"image-with-text","blocks":{"heading_fG8KWq":{"type":"heading","settings":{"heading":"Our Mission","heading_size":"h1"}},"text_N7Pyhg":{"type":"text","settings":{"text":"<p>We believe that health monitoring should be seamless, stylish, and sophisticated. Our mission is to create wearable technology that doesn't compromise on design while delivering exceptional functionality.<\/p><p>Founded by health tech innovators, we're committed to empowering individuals with the insights they need to live healthier, more informed lives.<\/p>","text_style":"body"}},"button_DJHkk6":{"type":"button","settings":{"button_label":"Our Story","button_link":"shopify:\/\/pages\/about","button_style_secondary":false}}},"block_order":["heading_fG8KWq","text_N7Pyhg","button_DJHkk6"],"settings":{"image":"shopify:\/\/shop_images\/electronics-and-accessories-natural-5-bottom.jpg","height":"adapt","desktop_image_width":"medium","layout":"text_first","image_behavior":"none","content_layout":"no-overlap","desktop_content_position":"middle","desktop_content_alignment":"left","mobile_content_alignment":"left","section_color_scheme":"","color_scheme":"background-1","padding_top":72,"padding_bottom":72},"custom_css":["@keyframes fadeInLeft { from { opacity: 0; transform: translateX(-30px); } to { opacity: 1; transform: translateX(0); } }",".image-with-text__content { animation: fadeInLeft 1s ease-out; }"]}},"order":["image_banner_mBqgA9","slideshow_premium","multicolumn_features","collage_showcase","featured_collection","video_section","rich_text_stats","rich_text_kapxtX","multicolumn_testimonials","image_banner_w4DFXc","newsletter_signup","image_with_text_cUp9Di"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "image_banner_mBqgA9": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_zaQBEc": {
+          "type": "heading",
+          "settings": {
+            "heading": "Track Your Wellness Effortlessly",
+            "heading_size": "h0"
+          }
+        },
+        "text_twkrcU": {
+          "type": "text",
+          "settings": {
+            "text": "Experience the future of health monitoring with our premium smart ring. Seamlessly track your vitals, sleep patterns, and activity levels with unmatched precision and elegance.",
+            "text_style": "body"
+          }
+        },
+        "buttons_cNGBcm": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Shop Collection",
+            "button_link_1": "shopify://collections/all",
+            "button_style_secondary_1": false,
+            "button_label_2": "Watch Demo",
+            "button_link_2": "#video-section",
+            "button_style_secondary_2": true
+          }
+        }
+      },
+      "block_order": [
+        "heading_zaQBEc",
+        "text_twkrcU",
+        "buttons_cNGBcm"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/a-smart-ring-with-modern-appealing-look.png",
+        "image_overlay_opacity": 20,
+        "image_height": "large",
+        "image_behavior": "ambient",
+        "desktop_content_position": "middle-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": false,
+        "color_scheme": "accent-2",
+        "stack_images_on_mobile": true,
+        "mobile_content_alignment": "center",
+        "show_text_below": true
+      }
+    },
+    "multicolumn_features": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_1": {
+          "type": "column",
+          "settings": {
+            "title": "Advanced Sensors",
+            "text": "<p>Cutting-edge biometric sensors provide real-time health insights with medical-grade accuracy.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_2": {
+          "type": "column",
+          "settings": {
+            "title": "7-Day Battery Life",
+            "text": "<p>Ultra-efficient power management ensures week-long usage with just one charge.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_3": {
+          "type": "column",
+          "settings": {
+            "title": "Waterproof Design",
+            "text": "<p>Premium materials and IPX8 rating make it perfect for any lifestyle and activity.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_4": {
+          "type": "column",
+          "settings": {
+            "title": "Smart Analytics",
+            "text": "<p>AI-powered insights help you understand and optimize your health patterns.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_1",
+        "column_2",
+        "column_3",
+        "column_4"
+      ],
+      "settings": {
+        "title": "Why Choose Our Smart Ring?",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "Button label",
+        "button_link": "",
+        "columns_desktop": 4,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 72,
+        "padding_bottom": 36
+      }
+    },
+    "featured_collection": {
+      "type": "featured-collection",
+      "custom_css": [],
+      "settings": {
+        "collection": "all",
+        "products_to_show": 8,
+        "title": "Featured Products",
+        "heading_size": "h1",
+        "description": "<p>Discover our premium collection of smart rings designed for the modern lifestyle</p>",
+        "show_description": true,
+        "description_style": "body",
+        "columns_desktop": 4,
+        "enable_desktop_slider": true,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "color_scheme": "background-1",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": true,
+        "quick_add": "standard",
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 72
+      }
+    },
+    "video_section": {
+      "type": "video",
+      "settings": {
+        "heading": "See It In Action",
+        "heading_size": "h1",
+        "enable_video_looping": false,
+        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "description": "<p>Watch how our smart ring seamlessly integrates into your daily routine and provides valuable health insights.</p>",
+        "full_width": false,
+        "color_scheme": "accent-1",
+        "padding_top": 72,
+        "padding_bottom": 72
+      }
+    },
+    "rich_text_kapxtX": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_CDkg4j": {
+          "type": "heading",
+          "settings": {
+            "heading": "Your Health Journey Starts Here",
+            "heading_size": "h1"
+          }
+        },
+        "text_block": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Join thousands of health-conscious individuals who have transformed their wellness journey with our smart ring technology. Monitor, analyze, and optimize your health like never before.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_CDkg4j",
+        "text_block"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "accent-1",
+        "full_width": true,
+        "padding_top": 72,
+        "padding_bottom": 72
+      }
+    },
+    "multicolumn_testimonials": {
+      "type": "multicolumn",
+      "blocks": {
+        "testimonial_1": {
+          "type": "column",
+          "settings": {
+            "title": "Life-Changing Technology",
+            "text": "<p>\"This smart ring has completely transformed how I monitor my health. The insights are incredible!\"</p><p><strong>- Sarah M., Verified Buyer</strong></p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "testimonial_2": {
+          "type": "column",
+          "settings": {
+            "title": "Sleek and Accurate",
+            "text": "<p>\"I love how it looks like regular jewelry but provides so much valuable health data.\"</p><p><strong>- James K., Fitness Enthusiast</strong></p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "testimonial_3": {
+          "type": "column",
+          "settings": {
+            "title": "Best Investment",
+            "text": "<p>\"The battery life is amazing and the app is so intuitive. Highly recommend!\"</p><p><strong>- Emily R., Tech Professional</strong></p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_1",
+        "testimonial_2",
+        "testimonial_3"
+      ],
+      "settings": {
+        "title": "What Our Customers Say",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "Button label",
+        "button_link": "",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "color_scheme": "background-2",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 72,
+        "padding_bottom": 72
+      }
+    },
+    "image_banner_w4DFXc": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_KRGrkL": {
+          "type": "heading",
+          "settings": {
+            "heading": "Luxury Meets Technology",
+            "heading_size": "h0"
+          }
+        },
+        "text_enhanced": {
+          "type": "text",
+          "settings": {
+            "text": "Crafted with premium materials and cutting-edge technology for the discerning individual who values both style and substance.",
+            "text_style": "body"
+          }
+        },
+        "buttons_qUFTyT": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Explore Collection",
+            "button_link_1": "shopify://collections",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": true
+          }
+        }
+      },
+      "block_order": [
+        "heading_KRGrkL",
+        "text_enhanced",
+        "buttons_qUFTyT"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/a-smart-ring-with-modern-appealing-look.png",
+        "image_overlay_opacity": 30,
+        "image_height": "medium",
+        "image_behavior": "none",
+        "desktop_content_position": "middle-right",
+        "desktop_content_alignment": "right",
+        "show_text_box": false,
+        "color_scheme": "accent-2",
+        "stack_images_on_mobile": true,
+        "mobile_content_alignment": "center",
+        "show_text_below": true
+      }
+    },
+    "newsletter_signup": {
+      "type": "newsletter",
+      "settings": {
+        "color_scheme": "inverse",
+        "full_width": true,
+        "padding_top": 52,
+        "padding_bottom": 52
+      }
+    },
+    "image_with_text_cUp9Di": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_fG8KWq": {
+          "type": "heading",
+          "settings": {
+            "heading": "Our Mission",
+            "heading_size": "h1"
+          }
+        },
+        "text_N7Pyhg": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We believe that health monitoring should be seamless, stylish, and sophisticated. Our mission is to create wearable technology that doesn't compromise on design while delivering exceptional functionality.</p><p>Founded by health tech innovators, we're committed to empowering individuals with the insights they need to live healthier, more informed lives.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_DJHkk6": {
+          "type": "button",
+          "settings": {
+            "button_label": "Our Story",
+            "button_link": "shopify://pages/about",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_fG8KWq",
+        "text_N7Pyhg",
+        "button_DJHkk6"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/a-smart-ring-with-modern-appealing-look.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "color_scheme": "background-1",
+        "padding_top": 72,
+        "padding_bottom": 72
+      }
+    }
+  },
+  "order": [
+    "image_banner_mBqgA9",
+    "multicolumn_features",
+    "featured_collection",
+    "video_section",
+    "rich_text_kapxtX",
+    "multicolumn_testimonials",
+    "image_banner_w4DFXc",
+    "newsletter_signup",
+    "image_with_text_cUp9Di"
+  ]
+}
