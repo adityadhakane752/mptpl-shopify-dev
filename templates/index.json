@@ -191,47 +191,58 @@
         "padding_bottom": 72
       }
     },
-    "rich_text_stats": {
-      "type": "rich-text",
+    "multicolumn_stats": {
+      "type": "multicolumn",
       "blocks": {
-        "heading_stats": {
-          "type": "heading",
-          "settings": {
-            "heading": "Trusted by 50,000+ Users Worldwide",
-            "heading_size": "h1"
-          }
-        },
         "stat_1": {
-          "type": "text",
+          "type": "column",
           "settings": {
-            "text": "<h3>99.9% Accuracy Rate</h3><p>Medical-grade precision in all health measurements</p>"
+            "title": "99.9%",
+            "text": "<p><strong>Accuracy Rate</strong></p><p>Medical-grade precision in all health measurements</p>",
+            "link_label": "",
+            "link": ""
           }
         },
         "stat_2": {
-          "type": "text",
+          "type": "column",
           "settings": {
-            "text": "<h3>24/7 Continuous Monitoring</h3><p>Round-the-clock health tracking without interruption</p>"
+            "title": "24/7",
+            "text": "<p><strong>Continuous Monitoring</strong></p><p>Round-the-clock health tracking without interruption</p>",
+            "link_label": "",
+            "link": ""
           }
         },
         "stat_3": {
-          "type": "text",
+          "type": "column",
           "settings": {
-            "text": "<h3>30+ Health Metrics</h3><p>Comprehensive insights into your wellness journey</p>"
+            "title": "30+",
+            "text": "<p><strong>Health Metrics</strong></p><p>Comprehensive insights into your wellness journey</p>",
+            "link_label": "",
+            "link": ""
           }
         },
         "stat_4": {
-          "type": "text",
+          "type": "column",
           "settings": {
-            "text": "<h3>7 Days Battery Life</h3><p>Week-long power for uninterrupted monitoring</p>"
+            "title": "7 Days",
+            "text": "<p><strong>Battery Life</strong></p><p>Week-long power for uninterrupted monitoring</p>",
+            "link_label": "",
+            "link": ""
           }
         }
       },
-      "block_order": ["heading_stats", "stat_1", "stat_2", "stat_3", "stat_4"],
+      "block_order": ["stat_1", "stat_2", "stat_3", "stat_4"],
       "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
+        "title": "Trusted by 50,000+ Users Worldwide",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 4,
+        "column_alignment": "center",
+        "background_style": "primary",
         "color_scheme": "background-2",
-        "full_width": true,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
         "padding_top": 72,
         "padding_bottom": 72
       }
@@ -388,7 +399,7 @@
             "button_style_secondary": false
           }
         }
-      },
+    },
       "block_order": ["heading_fG8KWq", "text_N7Pyhg", "button_DJHkk6"],
       "settings": {
         "image": "shopify://shop_images/electronics-and-accessories-natural-5-bottom.jpg",
@@ -412,7 +423,7 @@
     "multicolumn_features",
     "featured_collection",
     "video_section",
-    "rich_text_stats",
+    "multicolumn_stats",
     "rich_text_kapxtX",
     "multicolumn_testimonials",
     "image_banner_w4DFXc",
