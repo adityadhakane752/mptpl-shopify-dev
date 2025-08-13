@@ -42,15 +42,7 @@
         "stack_images_on_mobile": true,
         "mobile_content_alignment": "center",
         "show_text_below": true
-      },
-      "custom_css": [
-        "@keyframes float { 0%, 100% { transform: translateY(0px); } 50% { transform: translateY(-10px); } }",
-        ".banner__content { animation: float 3s ease-in-out infinite; }",
-        "@keyframes fadeInUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }",
-        ".banner__heading, .banner__text, .banner__buttons { animation: fadeInUp 0.8s ease-out forwards; }",
-        ".banner__text { animation-delay: 0.3s; }",
-        ".banner__buttons { animation-delay: 0.6s; }"
-      ]
+      }
     },
     "slideshow_premium": {
       "type": "slideshow",
@@ -108,36 +100,36 @@
           "type": "column",
           "settings": {
             "title": "Advanced Sensors",
-            "text": "<p>Cutting-edge biometric sensors provide real-time health insights with medical-grade accuracy.</p>",
-            "link_label": "",
-            "link": ""
+            "text": "<p>Cutting-edge biometric sensors provide real-time health insights with medical-grade accuracy. Track heart rate, blood oxygen, and temperature continuously.</p>",
+            "link_label": "Learn More",
+            "link": "shopify://pages/technology"
           }
         },
         "column_2": {
           "type": "column",
           "settings": {
             "title": "7-Day Battery Life",
-            "text": "<p>Ultra-efficient power management ensures week-long usage with just one charge.</p>",
-            "link_label": "",
-            "link": ""
+            "text": "<p>Ultra-efficient power management ensures week-long usage with just one charge. Smart power optimization adapts to your usage patterns.</p>",
+            "link_label": "Battery Tech",
+            "link": "shopify://pages/specifications"
           }
         },
         "column_3": {
           "type": "column",
           "settings": {
             "title": "Waterproof Design",
-            "text": "<p>Premium materials and IPX8 rating make it perfect for any lifestyle and activity.</p>",
-            "link_label": "",
-            "link": ""
+            "text": "<p>Premium materials and IPX8 rating make it perfect for any lifestyle and activity. Swim, shower, and live without limits.</p>",
+            "link_label": "Durability",
+            "link": "shopify://pages/durability"
           }
         },
         "column_4": {
           "type": "column",
           "settings": {
             "title": "Smart Analytics",
-            "text": "<p>AI-powered insights help you understand and optimize your health patterns.</p>",
-            "link_label": "",
-            "link": ""
+            "text": "<p>AI-powered insights help you understand and optimize your health patterns. Personalized recommendations for better wellness.</p>",
+            "link_label": "AI Features",
+            "link": "shopify://pages/ai-features"
           }
         }
       },
@@ -148,7 +140,7 @@
         "image_width": "full",
         "image_ratio": "adapt",
         "columns_desktop": 4,
-        "column_alignment": "left",
+        "column_alignment": "center",
         "background_style": "primary",
         "color_scheme": "background-1",
         "columns_mobile": "1",
@@ -162,7 +154,7 @@
       "settings": {
         "title": "Featured Products",
         "heading_size": "h1",
-        "description": "<p>Discover our premium collection of smart rings designed for the modern lifestyle</p>",
+        "description": "<p>Discover our premium collection of smart rings designed for the modern lifestyle. Each piece combines cutting-edge technology with elegant design.</p>",
         "show_description": true,
         "description_style": "body",
         "collection": "all",
@@ -190,7 +182,7 @@
       "settings": {
         "heading": "See It In Action",
         "heading_size": "h1",
-        "description": "<p>Watch how our smart ring seamlessly integrates into your daily routine and provides valuable health insights.</p>",
+        "description": "<p>Watch how our smart ring seamlessly integrates into your daily routine and provides valuable health insights that matter.</p>",
         "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
         "enable_video_looping": false,
         "full_width": false,
@@ -209,14 +201,32 @@
             "heading_size": "h1"
           }
         },
-        "text_stats": {
+        "stat_1": {
           "type": "text",
           "settings": {
-            "text": "<div class=\"stats-grid\"><div class=\"stat-item\"><h3>99.9%</h3><p>Accuracy Rate</p></div><div class=\"stat-item\"><h3>24/7</h3><p>Continuous Monitoring</p></div><div class=\"stat-item\"><h3>30+</h3><p>Health Metrics</p></div><div class=\"stat-item\"><h3>7 Days</h3><p>Battery Life</p></div></div>"
+            "text": "<h3>99.9% Accuracy Rate</h3><p>Medical-grade precision in all health measurements</p>"
+          }
+        },
+        "stat_2": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>24/7 Continuous Monitoring</h3><p>Round-the-clock health tracking without interruption</p>"
+          }
+        },
+        "stat_3": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>30+ Health Metrics</h3><p>Comprehensive insights into your wellness journey</p>"
+          }
+        },
+        "stat_4": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>7 Days Battery Life</h3><p>Week-long power for uninterrupted monitoring</p>"
           }
         }
       },
-      "block_order": ["heading_stats", "text_stats"],
+      "block_order": ["heading_stats", "stat_1", "stat_2", "stat_3", "stat_4"],
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
@@ -224,15 +234,7 @@
         "full_width": true,
         "padding_top": 72,
         "padding_bottom": 72
-      },
-      "custom_css": [
-        ".stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; margin-top: 2rem; }",
-        ".stat-item { text-align: center; padding: 1.5rem; }",
-        ".stat-item h3 { font-size: 3rem; font-weight: bold; margin-bottom: 0.5rem; color: #333; }",
-        ".stat-item p { font-size: 1.1rem; opacity: 0.9; }",
-        "@keyframes countUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }",
-        ".stat-item { animation: countUp 0.8s ease-out; }"
-      ]
+      }
     },
     "rich_text_kapxtX": {
       "type": "rich-text",
@@ -247,7 +249,7 @@
         "text_block": {
           "type": "text",
           "settings": {
-            "text": "<p>Join thousands of health-conscious individuals who have transformed their wellness journey with our smart ring technology. Monitor, analyze, and optimize your health like never before.</p>"
+            "text": "<p>Join thousands of health-conscious individuals who have transformed their wellness journey with our smart ring technology. Monitor, analyze, and optimize your health like never before.</p><p>Experience the perfect blend of style and substance with our award-winning wearable technology.</p>"
           }
         }
       },
@@ -268,7 +270,7 @@
           "type": "column",
           "settings": {
             "title": "Life-Changing Technology",
-            "text": "<p>\"This smart ring has completely transformed how I monitor my health. The insights are incredible!\"</p><p><strong>- Sarah M., Verified Buyer</strong></p>",
+            "text": "<p>\"This smart ring has completely transformed how I monitor my health. The insights are incredible and have helped me make better lifestyle choices!\"</p><p><strong>- Sarah M., Verified Buyer</strong></p>",
             "link_label": "",
             "link": ""
           }
@@ -277,7 +279,7 @@
           "type": "column",
           "settings": {
             "title": "Sleek and Accurate",
-            "text": "<p>\"I love how it looks like regular jewelry but provides so much valuable health data.\"</p><p><strong>- James K., Fitness Enthusiast</strong></p>",
+            "text": "<p>\"I love how it looks like regular jewelry but provides so much valuable health data. The battery life is amazing!\"</p><p><strong>- James K., Fitness Enthusiast</strong></p>",
             "link_label": "",
             "link": ""
           }
@@ -286,7 +288,7 @@
           "type": "column",
           "settings": {
             "title": "Best Investment",
-            "text": "<p>\"The battery life is amazing and the app is so intuitive. Highly recommend!\"</p><p><strong>- Emily R., Tech Professional</strong></p>",
+            "text": "<p>\"The AI insights are game-changing. It's like having a personal health coach on my finger 24/7.\"</p><p><strong>- Emily R., Tech Professional</strong></p>",
             "link_label": "",
             "link": ""
           }
@@ -299,7 +301,7 @@
         "image_width": "full",
         "image_ratio": "adapt",
         "columns_desktop": 3,
-        "column_alignment": "left",
+        "column_alignment": "center",
         "background_style": "primary",
         "color_scheme": "background-2",
         "columns_mobile": "1",
@@ -342,7 +344,7 @@
         "image": "shopify://shop_images/electronics-and-accessories-natural-3-middle.jpg",
         "image_overlay_opacity": 30,
         "image_height": "medium",
-        "image_behavior": "none",
+        "image_behavior": "zoom-in",
         "desktop_content_position": "middle-right",
         "desktop_content_alignment": "right",
         "show_text_box": false,
