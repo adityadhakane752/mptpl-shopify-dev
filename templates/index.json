@@ -44,7 +44,7 @@
         "buttons_cNGBcm"
       ],
       "settings": {
-        "image": "shopify://shop_images/a-smart-ring-with-modern-appealing-look.png",
+        "image": "shopify://shop_images/a-smart-ring-with-a-very-interesting-appearance.png",
         "image_overlay_opacity": 20,
         "image_height": "large",
         "image_behavior": "ambient",
@@ -281,6 +281,7 @@
         "buttons_qUFTyT"
       ],
       "settings": {
+        "image": "shopify://shop_images/an-image-consisting-various-sizes-variants-of-smart-rings-which-ill-use-as-a-background-for-my-stores-explore-collections-section.png",
         "image_overlay_opacity": 30,
         "image_height": "medium",
         "image_behavior": "none",
@@ -334,6 +335,7 @@
         "button_DJHkk6"
       ],
       "settings": {
+        "image": "shopify://shop_images/generate-an-image-for-our-mission-section.png",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "text_first",
