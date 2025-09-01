@@ -256,6 +256,7 @@
     {% endstyle %}
 
     {{ 'base.css' | asset_url | stylesheet_tag }}
+    {{ 'mobile-optimizations.css' | asset_url | stylesheet_tag }}
     
     {%- comment -%} Custom animations for smart ring homepage {%- endcomment -%}
     {%- if template.name == 'index' -%}
