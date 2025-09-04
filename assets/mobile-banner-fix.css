@@ -2,56 +2,107 @@
 
 /* Force accent-2 background color on mobile for banners and slideshows */
 @media screen and (max-width: 749px) {
-  /* Hero banner fix for accent-2 color scheme */
+  /* Hero banner fix for accent-2 color scheme - Multiple selector variations */
   .banner .banner__box.color-accent-2,
-  .banner .banner__box.color-accent-2.gradient {
+  .banner .banner__box.color-accent-2.gradient,
+  .color-accent-2 .banner__box,
+  .color-accent-2.banner__box,
+  .accent-2 .banner__box,
+  .accent-2.banner__box {
     background: rgb(var(--color-background)) !important;
     background: var(--gradient-background) !important;
   }
   
-  /* Slideshow fix for accent-2 color scheme */
+  /* Slideshow fix for accent-2 color scheme - Multiple selector variations */
   .slideshow .slideshow__text.color-accent-2,
-  .slideshow .slideshow__text.color-accent-2.gradient {
+  .slideshow .slideshow__text.color-accent-2.gradient,
+  .color-accent-2 .slideshow__text,
+  .color-accent-2.slideshow__text,
+  .accent-2 .slideshow__text,
+  .accent-2.slideshow__text {
     background: rgb(var(--color-background)) !important;
     background: var(--gradient-background) !important;
   }
   
   /* Additional specificity for banner with mobile-bottom class */
   .banner--mobile-bottom .banner__box.color-accent-2,
-  .banner--mobile-bottom .banner__box.color-accent-2.gradient {
+  .banner--mobile-bottom .banner__box.color-accent-2.gradient,
+  .banner--mobile-bottom .color-accent-2.banner__box,
+  .banner--mobile-bottom .accent-2.banner__box {
     background: rgb(var(--color-background)) !important;
     background: var(--gradient-background) !important;
   }
   
   /* Slideshow mobile bottom fix */
   .slideshow.banner--mobile-bottom .slideshow__text.color-accent-2,
-  .slideshow.banner--mobile-bottom .slideshow__text.color-accent-2.gradient {
+  .slideshow.banner--mobile-bottom .slideshow__text.color-accent-2.gradient,
+  .slideshow.banner--mobile-bottom .color-accent-2.slideshow__text,
+  .slideshow.banner--mobile-bottom .accent-2.slideshow__text {
     background: rgb(var(--color-background)) !important;
     background: var(--gradient-background) !important;
+  }
+  
+  /* Override all transparent backgrounds for text containers with accent-2 */
+  .banner .banner__box[class*="accent-2"],
+  .slideshow .slideshow__text[class*="accent-2"],
+  .banner .content-container[class*="accent-2"],
+  .slideshow .content-container[class*="accent-2"] {
+    background: rgb(0, 0, 0) !important; /* Force black background for accent-2 */
   }
 }
 
 /* Alternative fix - override the transparent background specifically for accent-2 */
 @media screen and (max-width: 749px) {
-  .banner:not(.banner--mobile-bottom):not(.email-signup-banner) .banner__box.color-accent-2 {
-    background: rgb(var(--color-background)) !important;
+  .banner:not(.banner--mobile-bottom):not(.email-signup-banner) .banner__box.color-accent-2,
+  .banner:not(.banner--mobile-bottom):not(.email-signup-banner) .banner__box[class*="accent-2"] {
+    background: rgb(0, 0, 0) !important; /* Force black background */
   }
   
-  .banner--mobile-bottom:not(.banner--stacked) .banner__box.color-accent-2 {
-    background: rgb(var(--color-background)) !important;
+  .banner--mobile-bottom:not(.banner--stacked) .banner__box.color-accent-2,
+  .banner--mobile-bottom:not(.banner--stacked) .banner__box[class*="accent-2"] {
+    background: rgb(0, 0, 0) !important; /* Force black background */
   }
 }
 
 /* Desktop transparent banner fix for accent-2 color scheme */
 @media screen and (min-width: 750px) {
   .banner--desktop-transparent .banner__box.color-accent-2,
-  .banner--desktop-transparent .banner__box.color-accent-2.gradient {
-    background: rgb(var(--color-background)) !important;
-    background: var(--gradient-background) !important;
+  .banner--desktop-transparent .banner__box.color-accent-2.gradient,
+  .banner--desktop-transparent .banner__box[class*="accent-2"] {
+    background: rgb(0, 0, 0) !important; /* Force black background */
     padding: 4rem 0;
     max-width: 89rem;
     border: none;
     border-radius: 0;
     box-shadow: none;
+  }
+}
+
+/* Nuclear option - force black background for all accent-2 elements on mobile */
+@media screen and (max-width: 749px) {
+  [class*="accent-2"] {
+    background-color: rgb(0, 0, 0) !important;
+  }
+  
+  /* Ensure text is white in accent-2 elements */
+  [class*="accent-2"] h1,
+  [class*="accent-2"] h2,
+  [class*="accent-2"] h3,
+  [class*="accent-2"] p,
+  [class*="accent-2"] .banner__heading,
+  [class*="accent-2"] .banner__text,
+  [class*="accent-2"] a {
+    color: rgb(255, 255, 255) !important;
+  }
+}
+
+/* Final override - use exact class names */
+@media screen and (max-width: 749px) {
+  .color-accent-2,
+  .color-accent-2.gradient,
+  .banner__box.color-accent-2,
+  .slideshow__text.color-accent-2 {
+    background: #000000 !important;
+    background-color: #000000 !important;
   }
 }

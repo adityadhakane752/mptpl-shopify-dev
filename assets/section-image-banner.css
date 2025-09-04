@@ -490,3 +490,30 @@
     color: currentColor;
   }
 }
+
+/* Emergency Mobile Banner Fix for Accent-2 Color Scheme */
+@media screen and (max-width: 749px) {
+  /* Force black background for accent-2 elements on mobile */
+  .banner .banner__box[class*="accent-2"],
+  .slideshow .slideshow__text[class*="accent-2"],
+  .banner .color-accent-2,
+  .slideshow .color-accent-2 {
+    background: #000000 !important;
+    background-color: #000000 !important;
+  }
+  
+  /* Ensure white text for accent-2 elements */
+  .banner .banner__box[class*="accent-2"] *,
+  .slideshow .slideshow__text[class*="accent-2"] *,
+  .banner .color-accent-2 *,
+  .slideshow .color-accent-2 * {
+    color: #ffffff !important;
+  }
+  
+  /* Override any transparent backgrounds specifically for accent-2 */
+  .banner:not(.banner--mobile-bottom):not(.email-signup-banner) .banner__box[class*="accent-2"],
+  .banner--mobile-bottom:not(.banner--stacked) .banner__box[class*="accent-2"] {
+    background: #000000 !important;
+    background-color: #000000 !important;
+  }
+}
