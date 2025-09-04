@@ -4,7 +4,9 @@
   {{ 'mobile-banner-fix.css' | asset_url | stylesheet_tag }}
   
   {%- comment -%} JavaScript fix for animation conflicts {%- endcomment -%}
-  <script src="{{ 'mobile-banner-animation-fix.js' | asset_url }}" defer></script>{%- if section.settings.slide_height == 'adapt_image' and section.blocks.first.settings.image != blank -%}
+  <script src="{{ 'mobile-banner-animation-fix.js' | asset_url }}" defer></script>
+  <script src="{{ 'mobile-accent2-bg-fix.js' | asset_url }}" defer></script>
+  {%- if section.settings.slide_height == 'adapt_image' and section.blocks.first.settings.image != blank -%}
   {%- style -%}
     @media screen and (max-width: 749px) {
       #Slider-{{ section.id }}::before,
