@@ -1,0 +1,524 @@
+{%- comment -%}
+Mobile-Optimized Slideshow Section
+Simple, clean, and performance-focused
+{%- endcomment -%}
+
+{{ 'mobile-optimized-homepage.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  #Slideshow-{{ section.id }} {
+    position: relative;
+    overflow: hidden;
+  }
+
+  #Slideshow-{{ section.id }} .slideshow__slide {
+    min-height: 60vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #Slideshow-{{ section.id }} .slideshow__media {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+
+  #Slideshow-{{ section.id }} .slideshow__media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  #Slideshow-{{ section.id }} .slideshow__text-wrapper {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    padding: 2rem 1rem;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  /* Force black background for accent-2 - CRITICAL */
+  #Slideshow-{{ section.id }} .color-accent-2,
+  #Slideshow-{{ section.id }} .color-accent-2 .slideshow__text,
+  #Slideshow-{{ section.id }} .color-accent-2 .slideshow__text-wrapper {
+    background: #000000 !important;
+    background-color: #000000 !important;
+    color: #ffffff !important;
+  }
+
+  #Slideshow-{{ section.id }} .color-accent-2 * {
+    color: #ffffff !important;
+  }
+
+  /* Simple dot navigation */
+  #Slideshow-{{ section.id }} .flickity-page-dots {
+    bottom: 1rem;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    z-index: 3;
+  }
+
+  #Slideshow-{{ section.id }} .flickity-page-dots .dot {
+    width: 12px;
+    height: 12px;
+    margin: 0 8px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+
+  #Slideshow-{{ section.id }} .flickity-page-dots .dot.is-selected {
+    background: rgba(255, 255, 255, 1);
+  }
+
+  /* Mobile-specific styles */
+  @media screen and (max-width: 749px) {
+    #Slideshow-{{ section.id }} .slideshow__slide {
+      min-height: 50vh;
+    }
+    
+    #Slideshow-{{ section.id }} .slideshow__heading {
+      font-size: 1.6rem;
+      line-height: 1.2;
+      margin-bottom: 1rem;
+      font-weight: 700;
+    }
+    
+    #Slideshow-{{ section.id }} .slideshow__text {
+      font-size: 0.9rem;
+      line-height: 1.5;
+      margin-bottom: 2rem;
+      opacity: 0.95;
+    }
+    
+    #Slideshow-{{ section.id }} .slideshow__btn {
+      padding: 0.8rem 1.5rem;
+      border-radius: 6px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: opacity 0.2s ease;
+    }
+    
+    #Slideshow-{{ section.id }} .slideshow__btn:hover {
+      opacity: 0.9;
+    }
+  }
+{%- endstyle -%}
+
+<div
+  id="Slideshow-{{ section.id }}"
+  class="slideshow banner banner--{{ section.settings.slide_height }} {% if section.settings.show_text_below %}banner--mobile-bottom{% endif %}"
+  role="region"
+  aria-roledescription="carousel"
+  aria-label="{{ 'sections.slideshow.carousel' | t }}"
+>
+  {%- if section.blocks.size > 0 -%}
+    <div class="slider slider--everywhere">
+      {%- for block in section.blocks -%}
+        <div
+          class="slideshow__slide grid__item grid--1-col slider__slide"
+          id="Slide-{{ section.id }}-{{ forloop.index }}"
+          {{ block.shopify_attributes }}
+          role="group"
+          aria-roledescription="slide"
+          aria-label="{{ 'sections.slideshow.slide' | t: slide_number: forloop.index, total_slides: forloop.length }}"
+          tabindex="-1"
+        >
+          <div class="slideshow__media banner__media media{% if block.settings.image == blank %} placeholder{% endif %}">
+            {%- if block.settings.image -%}
+              {%- liquid
+                assign height = block.settings.image.width | divided_by: block.settings.image.aspect_ratio | round
+              -%}
+              {{ block.settings.image | image_url: width: 3840 | image_tag:
+                loading: 'lazy',
+                height: height,
+                sizes: '100vw',
+                widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840',
+                alt: block.settings.image.alt | escape
+              }}
+            {%- else -%}
+              <div class="placeholder-svg">
+                {{ 'hero-apparel-2' | placeholder_svg_tag: 'placeholder-svg' }}
+              </div>
+            {%- endif -%}
+          </div>
+          
+          <div class="slideshow__text-wrapper banner__content banner__content--{{ block.settings.box_align }} page-width{% if block.settings.show_text_box == false %} banner--desktop-transparent{% endif %}">
+            <div class="slideshow__text banner__box content-container color-{{ block.settings.color_scheme }} gradient">
+              {%- if block.settings.heading != blank -%}
+                <h2 class="banner__heading slideshow__heading inline-richtext {{ block.settings.heading_size }}">
+                  {{ block.settings.heading }}
+                </h2>
+              {%- endif -%}
+              {%- if block.settings.subheading != blank -%}
+                <div class="banner__text slideshow__text rte">
+                  <p>{{ block.settings.subheading }}</p>
+                </div>
+              {%- endif -%}
+              {%- if block.settings.button_label != blank -%}
+                <div class="banner__buttons">
+                  <a
+                    {% if block.settings.link == blank %}
+                      role="link" aria-disabled="true"
+                    {% else %}
+                      href="{{ block.settings.link }}"
+                    {% endif %}
+                    class="btn slideshow__btn{% if block.settings.button_style_secondary %} btn--secondary{% else %} btn--primary{% endif %}"
+                  >
+                    {{ block.settings.button_label | escape }}
+                  </a>
+                </div>
+              {%- endif -%}
+            </div>
+          </div>
+        </div>
+      {%- endfor -%}
+    </div>
+
+    {%- if section.blocks.size > 1 -%}
+      <div class="flickity-page-dots">
+        {%- for block in section.blocks -%}
+          <button
+            class="dot{% if forloop.first %} is-selected{% endif %}"
+            type="button"
+            data-slide-index="{{ forloop.index0 }}"
+            aria-label="{{ 'sections.slideshow.load_slide' | t: slide_number: forloop.index }}"
+          ></button>
+        {%- endfor -%}
+      </div>
+    {%- endif -%}
+  {%- endif -%}
+</div>
+
+{%- comment -%} Simple slideshow functionality {%- endcomment -%}
+<script>
+  (function() {
+    const slideshow = document.getElementById('Slideshow-{{ section.id }}');
+    if (!slideshow) return;
+    
+    const slides = slideshow.querySelectorAll('.slideshow__slide');
+    const dots = slideshow.querySelectorAll('.dot');
+    
+    if (slides.length <= 1) return;
+    
+    let currentSlide = 0;
+    let slideInterval;
+    
+    // Ensure accent-2 backgrounds stay black
+    function enforceAccent2Backgrounds() {
+      if (window.innerWidth <= 749) {
+        slides.forEach(slide => {
+          const accent2Elements = slide.querySelectorAll('.color-accent-2, .slideshow__text, .slideshow__text-wrapper');
+          accent2Elements.forEach(el => {
+            if (el.classList.contains('color-accent-2')) {
+              el.style.backgroundColor = '#000000';
+              el.style.background = '#000000';
+              el.style.color = '#ffffff';
+              
+              // Ensure all text is white
+              const textElements = el.querySelectorAll('h1, h2, h3, p, a, span');
+              textElements.forEach(text => {
+                text.style.color = '#ffffff';
+              });
+            }
+          });
+        });
+      }
+    }
+    
+    function showSlide(index) {
+      // Hide all slides
+      slides.forEach((slide, i) => {
+        slide.style.display = i === index ? 'flex' : 'none';
+      });
+      
+      // Update dots
+      dots.forEach((dot, i) => {
+        dot.classList.toggle('is-selected', i === index);
+      });
+      
+      currentSlide = index;
+      enforceAccent2Backgrounds();
+    }
+    
+    function nextSlide() {
+      const next = (currentSlide + 1) % slides.length;
+      showSlide(next);
+    }
+    
+    // Dot navigation
+    dots.forEach((dot, index) => {
+      dot.addEventListener('click', () => {
+        showSlide(index);
+        if (slideInterval) {
+          clearInterval(slideInterval);
+          startAutoplay();
+        }
+      });
+    });
+    
+    function startAutoplay() {
+      {% if section.settings.auto_rotate %}
+        slideInterval = setInterval(nextSlide, {{ section.settings.change_slides_speed | times: 1000 }});
+      {% endif %}
+    }
+    
+    // Initialize
+    showSlide(0);
+    startAutoplay();
+    
+    // Pause on hover
+    slideshow.addEventListener('mouseenter', () => {
+      if (slideInterval) clearInterval(slideInterval);
+    });
+    
+    slideshow.addEventListener('mouseleave', startAutoplay);
+    
+    // Handle resize
+    window.addEventListener('resize', enforceAccent2Backgrounds);
+    
+    // Initial background fix
+    enforceAccent2Backgrounds();
+  })();
+</script>
+
+{% schema %}
+{
+  "name": "Mobile-Optimized Slideshow",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "select",
+      "id": "layout",
+      "options": [
+        {
+          "value": "full_bleed",
+          "label": "Full screen"
+        },
+        {
+          "value": "grid",
+          "label": "Grid"
+        }
+      ],
+      "default": "full_bleed",
+      "label": "Layout"
+    },
+    {
+      "type": "select",
+      "id": "slide_height",
+      "options": [
+        {
+          "value": "adapt",
+          "label": "Adapt to first image"
+        },
+        {
+          "value": "small",
+          "label": "Small"
+        },
+        {
+          "value": "medium",
+          "label": "Medium"
+        },
+        {
+          "value": "large",
+          "label": "Large"
+        }
+      ],
+      "default": "medium",
+      "label": "Slide height"
+    },
+    {
+      "type": "checkbox",
+      "id": "auto_rotate",
+      "label": "Auto-rotate slides",
+      "default": false
+    },
+    {
+      "type": "range",
+      "id": "change_slides_speed",
+      "min": 3,
+      "max": 9,
+      "step": 2,
+      "unit": "s",
+      "label": "Change slides every",
+      "default": 5
+    },
+    {
+      "type": "checkbox",
+      "id": "show_text_below",
+      "label": "Show text below images on mobile",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "accessibility_info",
+      "label": "Slideshow description",
+      "info": "Describe the slideshow for customers using screen readers."
+    }
+  ],
+  "blocks": [
+    {
+      "type": "slide",
+      "name": "Slide",
+      "limit": 5,
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "inline_richtext",
+          "id": "heading",
+          "default": "Image slide",
+          "label": "Heading"
+        },
+        {
+          "type": "select",
+          "id": "heading_size",
+          "options": [
+            {
+              "value": "h2",
+              "label": "Small"
+            },
+            {
+              "value": "h1",
+              "label": "Medium"
+            },
+            {
+              "value": "h0",
+              "label": "Large"
+            }
+          ],
+          "default": "h1",
+          "label": "Heading size"
+        },
+        {
+          "type": "text",
+          "id": "subheading",
+          "default": "Tell your brand's story through images",
+          "label": "Subheading"
+        },
+        {
+          "type": "text",
+          "id": "button_label",
+          "default": "Button label",
+          "label": "Button label"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Button link"
+        },
+        {
+          "type": "checkbox",
+          "id": "button_style_secondary",
+          "default": false,
+          "label": "Use outline button style"
+        },
+        {
+          "type": "select",
+          "id": "box_align",
+          "options": [
+            {
+              "value": "top-left",
+              "label": "Top left"
+            },
+            {
+              "value": "top-center",
+              "label": "Top center"
+            },
+            {
+              "value": "top-right",
+              "label": "Top right"
+            },
+            {
+              "value": "middle-left",
+              "label": "Middle left"
+            },
+            {
+              "value": "middle-center",
+              "label": "Middle center"
+            },
+            {
+              "value": "middle-right",
+              "label": "Middle right"
+            },
+            {
+              "value": "bottom-left",
+              "label": "Bottom left"
+            },
+            {
+              "value": "bottom-center",
+              "label": "Bottom center"
+            },
+            {
+              "value": "bottom-right",
+              "label": "Bottom right"
+            }
+          ],
+          "default": "middle-center",
+          "label": "Content position"
+        },
+        {
+          "type": "select",
+          "id": "text_alignment",
+          "options": [
+            {
+              "value": "left",
+              "label": "Left"
+            },
+            {
+              "value": "center",
+              "label": "Center"
+            },
+            {
+              "value": "right",
+              "label": "Right"
+            }
+          ],
+          "default": "center",
+          "label": "Content alignment"
+        },
+        {
+          "type": "color_scheme",
+          "id": "color_scheme",
+          "label": "Color scheme",
+          "default": "accent-2"
+        },
+        {
+          "type": "checkbox",
+          "id": "show_text_box",
+          "default": true,
+          "label": "Show container on desktop"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Mobile-Optimized Slideshow",
+      "blocks": [
+        {
+          "type": "slide"
+        },
+        {
+          "type": "slide"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
