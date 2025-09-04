@@ -1,0 +1,57 @@
+/* Mobile Banner Background Fix for accent-2 color scheme */
+
+/* Force accent-2 background color on mobile for banners and slideshows */
+@media screen and (max-width: 749px) {
+  /* Hero banner fix for accent-2 color scheme */
+  .banner .banner__box.color-accent-2,
+  .banner .banner__box.color-accent-2.gradient {
+    background: rgb(var(--color-background)) !important;
+    background: var(--gradient-background) !important;
+  }
+  
+  /* Slideshow fix for accent-2 color scheme */
+  .slideshow .slideshow__text.color-accent-2,
+  .slideshow .slideshow__text.color-accent-2.gradient {
+    background: rgb(var(--color-background)) !important;
+    background: var(--gradient-background) !important;
+  }
+  
+  /* Additional specificity for banner with mobile-bottom class */
+  .banner--mobile-bottom .banner__box.color-accent-2,
+  .banner--mobile-bottom .banner__box.color-accent-2.gradient {
+    background: rgb(var(--color-background)) !important;
+    background: var(--gradient-background) !important;
+  }
+  
+  /* Slideshow mobile bottom fix */
+  .slideshow.banner--mobile-bottom .slideshow__text.color-accent-2,
+  .slideshow.banner--mobile-bottom .slideshow__text.color-accent-2.gradient {
+    background: rgb(var(--color-background)) !important;
+    background: var(--gradient-background) !important;
+  }
+}
+
+/* Alternative fix - override the transparent background specifically for accent-2 */
+@media screen and (max-width: 749px) {
+  .banner:not(.banner--mobile-bottom):not(.email-signup-banner) .banner__box.color-accent-2 {
+    background: rgb(var(--color-background)) !important;
+  }
+  
+  .banner--mobile-bottom:not(.banner--stacked) .banner__box.color-accent-2 {
+    background: rgb(var(--color-background)) !important;
+  }
+}
+
+/* Desktop transparent banner fix for accent-2 color scheme */
+@media screen and (min-width: 750px) {
+  .banner--desktop-transparent .banner__box.color-accent-2,
+  .banner--desktop-transparent .banner__box.color-accent-2.gradient {
+    background: rgb(var(--color-background)) !important;
+    background: var(--gradient-background) !important;
+    padding: 4rem 0;
+    max-width: 89rem;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+  }
+}
