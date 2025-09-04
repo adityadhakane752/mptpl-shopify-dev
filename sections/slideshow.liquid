@@ -1,9 +1,10 @@
 {{ 'section-image-banner.css' | asset_url | stylesheet_tag }}
 {{ 'component-slider.css' | asset_url | stylesheet_tag }}
 {{ 'component-slideshow.css' | asset_url | stylesheet_tag }}
-{{ 'mobile-banner-fix.css' | asset_url | stylesheet_tag }}
-
-{%- if section.settings.slide_height == 'adapt_image' and section.blocks.first.settings.image != blank -%}
+  {{ 'mobile-banner-fix.css' | asset_url | stylesheet_tag }}
+  
+  {%- comment -%} JavaScript fix for animation conflicts {%- endcomment -%}
+  <script src="{{ 'mobile-banner-animation-fix.js' | asset_url }}" defer></script>{%- if section.settings.slide_height == 'adapt_image' and section.blocks.first.settings.image != blank -%}
   {%- style -%}
     @media screen and (max-width: 749px) {
       #Slider-{{ section.id }}::before,

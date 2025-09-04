@@ -106,3 +106,48 @@
     background-color: #000000 !important;
   }
 }
+
+/* CRITICAL FIX: Prevent scroll animations from overriding background */
+@media screen and (max-width: 749px) {
+  /* Override scroll-trigger animations for accent-2 elements */
+  .color-accent-2.scroll-trigger.animate--fade-in,
+  .color-accent-2.scroll-trigger.animate--slide-in,
+  .banner.color-accent-2.scroll-trigger,
+  .slideshow.scroll-trigger .color-accent-2,
+  .scroll-trigger .color-accent-2,
+  .scroll-trigger:not(.scroll-trigger--offscreen) .color-accent-2,
+  .scroll-trigger.scroll-trigger--offscreen .color-accent-2 {
+    background: #000000 !important;
+    background-color: #000000 !important;
+  }
+  
+  /* Target banner content with animations - ensure content wrapper maintains position */
+  .banner__content.scroll-trigger.animate--slide-in,
+  .banner__content.scroll-trigger.animate--fade-in {
+    position: relative; /* Ensure content maintains layout during animation */
+  }
+  
+  .banner__content.scroll-trigger .color-accent-2,
+  .slideshow__text-wrapper.scroll-trigger .color-accent-2,
+  .banner__content .color-accent-2,
+  .slideshow__text-wrapper .color-accent-2 {
+    background: #000000 !important;
+    background-color: #000000 !important;
+  }
+  
+  /* Force background during all animation states */
+  .banner.scroll-trigger .banner__box.color-accent-2,
+  .slideshow.scroll-trigger .slideshow__text.color-accent-2,
+  .scroll-trigger .banner__box.color-accent-2,
+  .scroll-trigger .slideshow__text.color-accent-2 {
+    background: #000000 !important;
+    background-color: #000000 !important;
+  }
+  
+  /* Override during opacity animation phases */
+  .animate--fade-in.color-accent-2,
+  .animate--slide-in.color-accent-2 {
+    background: #000000 !important;
+    background-color: #000000 !important;
+  }
+}

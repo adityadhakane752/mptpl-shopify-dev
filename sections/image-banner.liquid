@@ -1,7 +1,8 @@
 {{ 'section-image-banner.css' | asset_url | stylesheet_tag }}
-{{ 'mobile-banner-fix.css' | asset_url | stylesheet_tag }}
-
-{%- if section.settings.image_height == 'adapt' and section.settings.image != blank -%}
+  {{ 'mobile-banner-fix.css' | asset_url | stylesheet_tag }}
+  
+  {%- comment -%} JavaScript fix for animation conflicts {%- endcomment -%}
+  <script src="{{ 'mobile-banner-animation-fix.js' | asset_url }}" defer></script>{%- if section.settings.image_height == 'adapt' and section.settings.image != blank -%}
   {%- style -%}
     @media screen and (max-width: 749px) {
       #Banner-{{ section.id }}::before,
