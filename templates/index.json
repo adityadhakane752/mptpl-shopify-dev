@@ -96,28 +96,29 @@
             "color_scheme": "background-1"
           }
         },
-        "slide_G6pRVN": {
+        "slide_GykF8q": {
           "type": "slide",
           "settings": {
+            "image": "shopify://shop_images/3.png",
             "image_overlay_opacity": 0,
-            "heading": "Image slide",
+            "heading": "Intelligent Wellness Insights",
             "heading_size": "h1",
-            "subheading": "Tell your brand's story through images",
-            "button_label": "Button label",
-            "link": "",
+            "subheading": "AI-powered analytics transform your health data into actionable insights",
+            "button_label": "Learn More",
+            "link": "shopify://collections",
             "button_style_secondary": false,
-            "show_text_box": true,
+            "show_text_box": false,
             "box_align": "middle-center",
             "text_alignment": "center",
             "text_alignment_mobile": "center",
-            "color_scheme": "scheme-1"
+            "color_scheme": "background-1"
           }
         }
       },
       "block_order": [
         "slide_1",
         "slide_2",
-        "slide_G6pRVN"
+        "slide_GykF8q"
       ],
       "settings": {
         "layout": "full_bleed",
