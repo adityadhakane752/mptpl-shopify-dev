@@ -44,6 +44,7 @@
         "buttons_cNGBcm"
       ],
       "settings": {
+        "image": "shopify://shop_images/1.png",
         "image_overlay_opacity": 0,
         "image_height": "large",
         "image_behavior": "zoom-in",
@@ -62,11 +63,12 @@
         "slide_1": {
           "type": "slide",
           "settings": {
-            "image_overlay_opacity": 50,
-            "heading": "Revolutionary Health Tech",
+            "image": "shopify://shop_images/2.png",
+            "image_overlay_opacity": 0,
+            "heading": "Revolutionary Health Technology",
             "heading_size": "h1",
-            "subheading": "Monitor your wellness with precision",
-            "button_label": "Discover More",
+            "subheading": "Monitor your wellness with medical-grade precision and elegant design",
+            "button_label": "Discover Innovation",
             "link": "shopify://collections/all",
             "button_style_secondary": false,
             "show_text_box": false,
@@ -79,12 +81,12 @@
         "slide_2": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/electronics-and-accessories-natural-3-middle.jpg",
-            "image_overlay_opacity": 50,
-            "heading": "Premium Design",
+            "image": "shopify://shop_images/3.png",
+            "image_overlay_opacity": 0,
+            "heading": "Premium Craftsmanship",
             "heading_size": "h1",
-            "subheading": "Where luxury meets innovation",
-            "button_label": "View Collection",
+            "subheading": "Where luxury aesthetics meet cutting-edge health technology",
+            "button_label": "Explore Collection",
             "link": "shopify://collections",
             "button_style_secondary": false,
             "show_text_box": false,
@@ -93,11 +95,29 @@
             "text_alignment_mobile": "center",
             "color_scheme": "background-1"
           }
+        },
+        "slide_G6pRVN": {
+          "type": "slide",
+          "settings": {
+            "image_overlay_opacity": 0,
+            "heading": "Image slide",
+            "heading_size": "h1",
+            "subheading": "Tell your brand's story through images",
+            "button_label": "Button label",
+            "link": "",
+            "button_style_secondary": false,
+            "show_text_box": true,
+            "box_align": "middle-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "color_scheme": "scheme-1"
+          }
         }
       },
       "block_order": [
         "slide_1",
-        "slide_2"
+        "slide_2",
+        "slide_G6pRVN"
       ],
       "settings": {
         "layout": "full_bleed",
