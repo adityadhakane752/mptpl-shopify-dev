@@ -1,0 +1,40 @@
+{
+  "sections": {
+    "cart-items": {
+      "type": "main-cart-items",
+      "settings": {
+        "color_scheme": "background-1",
+        "padding_top": 24,
+        "padding_bottom": 24
+      }
+    },
+    "cart-footer": {
+      "type": "main-cart-footer",
+      "settings": {
+        "color_scheme": "background-1",
+        "padding_top": 16,
+        "padding_bottom": 32
+      },
+      "blocks": {
+        "subtotal": {
+          "type": "subtotal",
+          "settings": {
+          }
+        },
+        "buttons": {
+          "type": "buttons",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "subtotal",
+        "buttons"
+      ]
+    }
+  },
+  "order": [
+    "cart-items",
+    "cart-footer"
+  ]
+}

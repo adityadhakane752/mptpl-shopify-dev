@@ -1,0 +1,113 @@
+/* Remove Image Overlays - Force disable all image overlays on homepage */
+
+/* CRITICAL: Override theme-dark-enhancements.css overlay styles */
+.banner__content,
+.slideshow__text-wrapper {
+  background: transparent !important;
+  backdrop-filter: none !important;
+  border-radius: 0 !important;
+}
+
+/* Remove overlays from image banners with specific targeting */
+.banner::after,
+.banner__media::after,
+[id*="Banner"]::after,
+[id*="banner"]::after {
+  opacity: 0 !important;
+  display: none !important;
+  visibility: hidden !important;
+}
+
+/* Remove overlays from slideshow images with specific targeting */
+.slideshow .banner__media::after,
+[id*="Slide"] .banner__media::after,
+[id*="slide"] .banner__media::after {
+  opacity: 0 !important;
+  display: none !important;
+  visibility: hidden !important;
+}
+
+/* Remove any potential backdrop filters that might cause blur */
+.banner__media,
+.slideshow__media,
+.banner .media,
+.slideshow .media {
+  backdrop-filter: none !important;
+  filter: none !important;
+}
+
+/* Ensure images are fully opaque */
+.banner__media img,
+.slideshow__media img,
+.banner img,
+.slideshow img {
+  opacity: 1 !important;
+  filter: none !important;
+}
+
+/* Remove any dark overlays that might be applied */
+.banner .media::before,
+.banner .media::after,
+.slideshow .media::before,
+.slideshow .media::after {
+  opacity: 0 !important;
+  display: none !important;
+  visibility: hidden !important;
+}
+
+/* Additional safety for any overlay classes */
+[class*="overlay"]::before,
+[class*="overlay"]::after {
+  opacity: 0 !important;
+  display: none !important;
+  visibility: hidden !important;
+}
+
+/* Target specific homepage sections */
+#Banner-image_banner_mBqgA9::after,
+#Banner-image_banner_w4DFXc::after {
+  opacity: 0 !important;
+  display: none !important;
+  visibility: hidden !important;
+}
+
+/* Target slideshow slides */
+[id*="Slide-slideshow_premium"]::after,
+[id*="Slide-slideshow_premium"] .banner__media::after {
+  opacity: 0 !important;
+  display: none !important;
+  visibility: hidden !important;
+}
+
+/* Remove any background overlays */
+.banner,
+.slideshow {
+  background-image: none !important;
+}
+
+.banner::before,
+.slideshow::before {
+  opacity: 0 !important;
+  display: none !important;
+  visibility: hidden !important;
+}
+
+/* Ensure text content boxes don't have dark backgrounds */
+.banner__box,
+.slideshow__text {
+  background: transparent !important;
+  backdrop-filter: none !important;
+}
+
+/* Additional overrides for content wrappers */
+.banner__content.banner__content--middle-center,
+.slideshow__text-wrapper.banner__content {
+  background: transparent !important;
+  backdrop-filter: none !important;
+}
+
+/* Override any color scheme backgrounds */
+.color-scheme-1,
+.color-background-1 {
+  background: transparent !important;
+}
