@@ -137,37 +137,37 @@
         "column_1": {
           "type": "column",
           "settings": {
-            "title": "Advanced Sensors",
-            "text": "<p>Cutting-edge biometric sensors provide real-time health insights with medical-grade accuracy. Track heart rate, blood oxygen, and temperature continuously.</p>",
-            "link_label": "Learn More",
-            "link": "shopify://pages/technology"
+            "title": "Advanced Health Monitoring",
+            "text": "<p>Real-time tracking of heart rate, blood oxygen (SpO₂), HRV, stress levels, and sleep cycles with medical-grade accuracy. Monitor your wellness 24/7 with our premium sensor technology.</p>",
+            "link_label": "Health Features",
+            "link": "shopify://pages/health-monitoring"
           }
         },
         "column_2": {
           "type": "column",
           "settings": {
-            "title": "7-Day Battery Life",
-            "text": "<p>Ultra-efficient power management ensures week-long usage with just one charge. Smart power optimization adapts to your usage patterns.</p>",
+            "title": "5-10 Days Battery Life",
+            "text": "<p>Extended battery performance with wireless and magnetic charging. Smart power management ensures reliable usage for up to 10 days on a single charge.</p>",
             "link_label": "Battery Tech",
-            "link": "shopify://pages/specifications"
+            "link": "shopify://pages/battery-specifications"
           }
         },
         "column_3": {
           "type": "column",
           "settings": {
-            "title": "Waterproof Design",
-            "text": "<p>Premium materials and IPX8 rating make it perfect for any lifestyle and activity. Swim, shower, and live without limits.</p>",
+            "title": "5ATM & IP68 Waterproof",
+            "text": "<p>Swim, shower, and exercise worry-free with our premium waterproof design. Built with stainless steel alloy for maximum durability and style.</p>",
             "link_label": "Durability",
-            "link": "shopify://pages/durability"
+            "link": "shopify://pages/waterproof-design"
           }
         },
         "column_4": {
           "type": "column",
           "settings": {
-            "title": "Smart Analytics",
-            "text": "<p>AI-powered insights help you understand and optimize your health patterns. Personalized recommendations for better wellness.</p>",
-            "link_label": "AI Features",
-            "link": "shopify://pages/ai-features"
+            "title": "Smart Control Features",
+            "text": "<p>Control music, camera, apps, and more directly from your ring. OLED display with touch screen functionality and seamless Android compatibility via QRing app.</p>",
+            "link_label": "Smart Features",
+            "link": "shopify://pages/smart-controls"
           }
         }
       },
@@ -178,7 +178,7 @@
         "column_4"
       ],
       "settings": {
-        "title": "Why Choose Our Smart Ring?",
+        "title": "Why Choose Our M-Series Smart Rings?",
         "heading_size": "h1",
         "image_width": "full",
         "image_ratio": "adapt",
