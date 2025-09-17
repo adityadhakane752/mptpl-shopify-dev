@@ -32,7 +32,7 @@
             "button_label_1": "Shop Collection",
             "button_link_1": "shopify://collections/all",
             "button_style_secondary_1": false,
-            "button_label_2": "Watch Demo",
+            "button_label_2": "",
             "button_link_2": "#video-section",
             "button_style_secondary_2": true
           }
@@ -297,6 +297,53 @@
         "padding_bottom": 48
       }
     },
+    "image_banner_w4DFXc": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_KRGrkL": {
+          "type": "heading",
+          "settings": {
+            "heading": "Luxury Meets Technology",
+            "heading_size": "h0"
+          }
+        },
+        "text_enhanced": {
+          "type": "text",
+          "settings": {
+            "text": "Crafted with premium materials and cutting-edge technology for the discerning individual who values both style and substance.",
+            "text_style": "body"
+          }
+        },
+        "buttons_qUFTyT": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Explore Collection",
+            "button_link_1": "shopify://collections",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": true
+          }
+        }
+      },
+      "block_order": [
+        "heading_KRGrkL",
+        "text_enhanced",
+        "buttons_qUFTyT"
+      ],
+      "settings": {
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "image_behavior": "zoom-in",
+        "desktop_content_position": "middle-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": false,
+        "color_scheme": "background-1",
+        "stack_images_on_mobile": true,
+        "mobile_content_alignment": "center",
+        "show_text_below": true
+      }
+    },
     "rich_text_kapxtX": {
       "type": "rich-text",
       "blocks": {
@@ -379,53 +426,6 @@
         "swipe_on_mobile": true,
         "padding_top": 48,
         "padding_bottom": 48
-      }
-    },
-    "image_banner_w4DFXc": {
-      "type": "image-banner",
-      "blocks": {
-        "heading_KRGrkL": {
-          "type": "heading",
-          "settings": {
-            "heading": "Luxury Meets Technology",
-            "heading_size": "h0"
-          }
-        },
-        "text_enhanced": {
-          "type": "text",
-          "settings": {
-            "text": "Crafted with premium materials and cutting-edge technology for the discerning individual who values both style and substance.",
-            "text_style": "body"
-          }
-        },
-        "buttons_qUFTyT": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "Explore Collection",
-            "button_link_1": "shopify://collections",
-            "button_style_secondary_1": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": true
-          }
-        }
-      },
-      "block_order": [
-        "heading_KRGrkL",
-        "text_enhanced",
-        "buttons_qUFTyT"
-      ],
-      "settings": {
-        "image_overlay_opacity": 0,
-        "image_height": "medium",
-        "image_behavior": "zoom-in",
-        "desktop_content_position": "middle-center",
-        "desktop_content_alignment": "center",
-        "show_text_box": false,
-        "color_scheme": "background-1",
-        "stack_images_on_mobile": true,
-        "mobile_content_alignment": "center",
-        "show_text_below": true
       }
     },
     "newsletter_signup": {
