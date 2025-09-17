@@ -220,12 +220,11 @@
     },
     "video_section": {
       "type": "video",
-      "disabled": true,
       "settings": {
         "heading": "See It In Action",
         "heading_size": "h1",
         "enable_video_looping": false,
-        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "video_url": "https://youtu.be/STt5Q-RA8K8",
         "description": "Watch how our smart ring seamlessly integrates into your daily routine and provides valuable health insights that matter.",
         "full_width": false,
         "color_scheme": "background-2",
