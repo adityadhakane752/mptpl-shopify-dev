@@ -112,7 +112,7 @@
         "slide_height": "large",
         "slider_visual": "dots",
         "auto_rotate": true,
-        "change_slides_speed": 5,
+        "change_slides_speed": 3,
         "image_behavior": "none",
         "show_text_below": true,
         "accessibility_info": "Slideshow about our brand"
@@ -181,6 +181,96 @@
         "padding_bottom": 48
       }
     },
+    "slideshow_tMibPP": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_e3bpjR": {
+          "type": "slide",
+          "settings": {
+            "image_overlay_opacity": 0,
+            "heading": "Image slide",
+            "heading_size": "h1",
+            "subheading": "Tell your brand's story through images",
+            "button_label": "Button label",
+            "link": "",
+            "button_style_secondary": false,
+            "show_text_box": true,
+            "box_align": "middle-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "color_scheme": ""
+          }
+        },
+        "slide_hLnbV6": {
+          "type": "slide",
+          "settings": {
+            "image_overlay_opacity": 0,
+            "heading": "Image slide",
+            "heading_size": "h1",
+            "subheading": "Tell your brand's story through images",
+            "button_label": "Button label",
+            "link": "",
+            "button_style_secondary": false,
+            "show_text_box": true,
+            "box_align": "middle-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "color_scheme": ""
+          }
+        },
+        "slide_wdJdDA": {
+          "type": "slide",
+          "settings": {
+            "image_overlay_opacity": 0,
+            "heading": "Image slide",
+            "heading_size": "h1",
+            "subheading": "Tell your brand's story through images",
+            "button_label": "Button label",
+            "link": "",
+            "button_style_secondary": false,
+            "show_text_box": true,
+            "box_align": "middle-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "color_scheme": ""
+          }
+        },
+        "slide_XwzK4h": {
+          "type": "slide",
+          "settings": {
+            "image_overlay_opacity": 0,
+            "heading": "Image slide",
+            "heading_size": "h1",
+            "subheading": "Tell your brand's story through images",
+            "button_label": "Button label",
+            "link": "",
+            "button_style_secondary": false,
+            "show_text_box": true,
+            "box_align": "middle-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "color_scheme": ""
+          }
+        }
+      },
+      "block_order": [
+        "slide_e3bpjR",
+        "slide_hLnbV6",
+        "slide_wdJdDA",
+        "slide_XwzK4h"
+      ],
+      "name": "t:sections.slideshow.presets.name",
+      "settings": {
+        "layout": "full_bleed",
+        "slide_height": "medium",
+        "slider_visual": "dots",
+        "auto_rotate": true,
+        "change_slides_speed": 3,
+        "image_behavior": "ambient",
+        "show_text_below": true,
+        "accessibility_info": "Slideshow about our brand"
+      }
+    },
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
@@ -216,7 +306,9 @@
         "heading": "See It In Action",
         "heading_size": "h1",
         "enable_video_looping": false,
-        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "video": "shopify://files/videos/VideoContent-For-Radian-0.75 - Made with Clipchamp.mp4",
+        "video_url": "https://youtu.be/STt5Q-RA8K8",
+        "cover_image": "shopify://shop_images/ultra-realistic-cinematic-render-of-a-futuristic-smart-ring-placed-slightly-lower-on-a-glossy-black-reflective-surface-surrounded-by-a-soft-neon-blue-glow-minimal-high-tech-luxury-des_3fb450c6-c173-436f-9b1c-3c051e52f785.png",
         "description": "Watch how our smart ring seamlessly integrates into your daily routine and provides valuable health insights that matter.",
         "full_width": false,
         "color_scheme": "background-2",
@@ -479,6 +571,7 @@
     "image_banner_mBqgA9",
     "slideshow_premium",
     "multicolumn_features",
+    "slideshow_tMibPP",
     "featured_collection",
     "video_section",
     "multicolumn_stats",
