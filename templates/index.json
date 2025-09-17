@@ -1,12 +1,3 @@
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
 {
   "sections": {
     "image_banner_mBqgA9": {
@@ -32,7 +23,7 @@
             "button_label_1": "Shop Collection",
             "button_link_1": "shopify://collections/all",
             "button_style_secondary_1": false,
-            "button_label_2": "Watch Demo",
+            "button_label_2": "",
             "button_link_2": "#video-section",
             "button_style_secondary_2": true
           }
@@ -44,7 +35,6 @@
         "buttons_cNGBcm"
       ],
       "settings": {
-        "image": "shopify://shop_images/1.png",
         "image_overlay_opacity": 0,
         "image_height": "large",
         "image_behavior": "zoom-in",
@@ -63,7 +53,6 @@
         "slide_1": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/2.png",
             "image_overlay_opacity": 0,
             "heading": "Revolutionary Health Technology",
             "heading_size": "h1",
@@ -81,7 +70,6 @@
         "slide_2": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/3.png",
             "image_overlay_opacity": 0,
             "heading": "Premium Craftsmanship",
             "heading_size": "h1",
@@ -99,7 +87,6 @@
         "slide_GykF8q": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/4.png",
             "image_overlay_opacity": 0,
             "heading": "Intelligent Wellness Insights",
             "heading_size": "h1",
@@ -224,12 +211,13 @@
     },
     "video_section": {
       "type": "video",
+      "disabled": true,
       "settings": {
         "heading": "See It In Action",
         "heading_size": "h1",
         "enable_video_looping": false,
         "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-        "description": "<p>Watch how our smart ring seamlessly integrates into your daily routine and provides valuable health insights that matter.</p>",
+        "description": "Watch how our smart ring seamlessly integrates into your daily routine and provides valuable health insights that matter.",
         "full_width": false,
         "color_scheme": "background-2",
         "padding_top": 48,
@@ -282,6 +270,7 @@
         "stat_3",
         "stat_4"
       ],
+      "disabled": true,
       "settings": {
         "title": "Trusted by 50,000+ Users Worldwide",
         "heading_size": "h1",
@@ -297,6 +286,53 @@
         "swipe_on_mobile": true,
         "padding_top": 48,
         "padding_bottom": 48
+      }
+    },
+    "image_banner_w4DFXc": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_KRGrkL": {
+          "type": "heading",
+          "settings": {
+            "heading": "Luxury Meets Technology",
+            "heading_size": "h0"
+          }
+        },
+        "text_enhanced": {
+          "type": "text",
+          "settings": {
+            "text": "Crafted with premium materials and cutting-edge technology for the discerning individual who values both style and substance.",
+            "text_style": "body"
+          }
+        },
+        "buttons_qUFTyT": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Explore Collection",
+            "button_link_1": "shopify://collections",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": true
+          }
+        }
+      },
+      "block_order": [
+        "heading_KRGrkL",
+        "text_enhanced",
+        "buttons_qUFTyT"
+      ],
+      "settings": {
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "image_behavior": "zoom-in",
+        "desktop_content_position": "middle-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": false,
+        "color_scheme": "background-1",
+        "stack_images_on_mobile": true,
+        "mobile_content_alignment": "center",
+        "show_text_below": true
       }
     },
     "rich_text_kapxtX": {
@@ -365,6 +401,7 @@
         "testimonial_2",
         "testimonial_3"
       ],
+      "disabled": true,
       "settings": {
         "title": "What Our Customers Say",
         "heading_size": "h1",
@@ -380,54 +417,6 @@
         "swipe_on_mobile": true,
         "padding_top": 48,
         "padding_bottom": 48
-      }
-    },
-    "image_banner_w4DFXc": {
-      "type": "image-banner",
-      "blocks": {
-        "heading_KRGrkL": {
-          "type": "heading",
-          "settings": {
-            "heading": "Luxury Meets Technology",
-            "heading_size": "h0"
-          }
-        },
-        "text_enhanced": {
-          "type": "text",
-          "settings": {
-            "text": "Crafted with premium materials and cutting-edge technology for the discerning individual who values both style and substance.",
-            "text_style": "body"
-          }
-        },
-        "buttons_qUFTyT": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "Explore Collection",
-            "button_link_1": "shopify://collections",
-            "button_style_secondary_1": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": true
-          }
-        }
-      },
-      "block_order": [
-        "heading_KRGrkL",
-        "text_enhanced",
-        "buttons_qUFTyT"
-      ],
-      "settings": {
-        "image": "shopify://shop_images/electronics-and-accessories-natural-3-middle.jpg",
-        "image_overlay_opacity": 0,
-        "image_height": "medium",
-        "image_behavior": "zoom-in",
-        "desktop_content_position": "middle-center",
-        "desktop_content_alignment": "center",
-        "show_text_box": false,
-        "color_scheme": "background-1",
-        "stack_images_on_mobile": true,
-        "mobile_content_alignment": "center",
-        "show_text_below": true
       }
     },
     "newsletter_signup": {
@@ -471,7 +460,6 @@
         "button_DJHkk6"
       ],
       "settings": {
-        "image": "shopify://shop_images/electronics-and-accessories-natural-5-bottom.jpg",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "text_first",
@@ -494,9 +482,9 @@
     "featured_collection",
     "video_section",
     "multicolumn_stats",
+    "image_banner_w4DFXc",
     "rich_text_kapxtX",
     "multicolumn_testimonials",
-    "image_banner_w4DFXc",
     "newsletter_signup",
     "image_with_text_cUp9Di"
   ]

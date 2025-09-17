@@ -1,0 +1,72 @@
+/* Product Features Bullet Points Styling */
+.product-features-list {
+  margin: 0.8rem 0 1rem 0;
+  padding: 0;
+}
+
+.features-bullets {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 1.5rem;
+  line-height: 1.4;
+}
+
+.features-bullets li {
+  margin: 0.3rem 0;
+  padding: 0;
+  color: rgba(var(--color-foreground), 0.8);
+  font-weight: 400;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.features-bullets li::before {
+  content: "✓";
+  color: #28a745;
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-top: 0.1rem;
+  flex-shrink: 0;
+}
+
+/* Remove bullet from text content */
+.features-bullets li {
+  text-indent: 0;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 749px) {
+  .features-bullets {
+    font-size: 0.9rem;
+  }
+  
+  .features-bullets li {
+    margin: 0.25rem 0;
+  }
+  
+  .product-features-list {
+    margin: 0.6rem 0 0.8rem 0;
+  }
+}
+
+/* Enhanced styling for premium models */
+.card-wrapper:has(.features-bullets li:contains("Medical-grade")) .features-bullets li::before,
+.card-wrapper:has(.features-bullets li:contains("Premium")) .features-bullets li::before {
+  color: #ffd700;
+}
+
+.card-wrapper:has(.features-bullets li:contains("Advanced")) .features-bullets li::before {
+  color: #007bff;
+}
+
+/* Hover effects */
+.card-wrapper:hover .features-bullets li {
+  color: rgba(var(--color-foreground), 0.9);
+}
+
+.card-wrapper:hover .features-bullets li::before {
+  transform: scale(1.1);
+  transition: transform 0.2s ease;
+}

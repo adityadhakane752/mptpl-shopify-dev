@@ -23,6 +23,7 @@
 {%- unless skip_styles -%}
   {{ 'component-rating.css' | asset_url | stylesheet_tag }}
   {{ 'component-volume-pricing.css' | asset_url | stylesheet_tag }}
+  {{ 'component-product-features.css' | asset_url | stylesheet_tag }}
 
   {{ 'component-price.css' | asset_url | stylesheet_tag }}
   {{ 'quick-order-list.css' | asset_url | stylesheet_tag }}
@@ -164,6 +165,49 @@
             {%- if show_vendor -%}
               <span class="visually-hidden">{{ 'accessibility.vendor' | t }}</span>
               <div class="caption-with-letter-spacing light">{{ card_product.vendor }}</div>
+            {%- endif -%}
+
+            {%- comment -%} Smart Ring Feature Bullets Based on Product Handle {%- endcomment -%}
+            {%- if card_product.handle contains 'm02' or card_product.handle contains 'M02' -%}
+              <div class="product-features-list">
+                <ul class="features-bullets">
+                  <li>• Basic health monitoring</li>
+                  <li>• 3-day battery life</li>
+                  <li>• Water resistant (IP65)</li>
+                  <li>• Essential sleep tracking</li>
+                  <li>• Bluetooth connectivity</li>
+                </ul>
+              </div>
+            {%- elsif card_product.handle contains 'm03' or card_product.handle contains 'M03' -%}
+              <div class="product-features-list">
+                <ul class="features-bullets">
+                  <li>• Advanced health monitoring</li>
+                  <li>• 5-day battery life</li>
+                  <li>• Waterproof (IP67)</li>
+                  <li>• Detailed sleep analysis</li>
+                  <li>• Smart notifications</li>
+                </ul>
+              </div>
+            {%- elsif card_product.handle contains 'm08' or card_product.handle contains 'M08' -%}
+              <div class="product-features-list">
+                <ul class="features-bullets">
+                  <li>• Premium health sensors</li>
+                  <li>• 7-day battery life</li>
+                  <li>• Full waterproof (5ATM)</li>
+                  <li>• AI-powered insights</li>
+                  <li>• Touch screen controls</li>
+                </ul>
+              </div>
+            {%- elsif card_product.handle contains 'm11' or card_product.handle contains 'M11' -%}
+              <div class="product-features-list">
+                <ul class="features-bullets">
+                  <li>• Medical-grade monitoring</li>
+                  <li>• 10-day battery life</li>
+                  <li>• Ultra waterproof (5ATM + IP68)</li>
+                  <li>• Advanced AI health coach</li>
+                  <li>• OLED display + gesture control</li>
+                </ul>
+              </div>
             {%- endif -%}
 
             <span class="caption-large light">{{ block.settings.description | escape }}</span>
