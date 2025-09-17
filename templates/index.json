@@ -44,7 +44,6 @@
         "buttons_cNGBcm"
       ],
       "settings": {
-        "image": "shopify://shop_images/1.png",
         "image_overlay_opacity": 0,
         "image_height": "large",
         "image_behavior": "zoom-in",
@@ -63,7 +62,6 @@
         "slide_1": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/2.png",
             "image_overlay_opacity": 0,
             "heading": "Revolutionary Health Technology",
             "heading_size": "h1",
@@ -81,7 +79,6 @@
         "slide_2": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/3.png",
             "image_overlay_opacity": 0,
             "heading": "Premium Craftsmanship",
             "heading_size": "h1",
@@ -99,7 +96,6 @@
         "slide_GykF8q": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/4.png",
             "image_overlay_opacity": 0,
             "heading": "Intelligent Wellness Insights",
             "heading_size": "h1",
@@ -224,12 +220,13 @@
     },
     "video_section": {
       "type": "video",
+      "disabled": true,
       "settings": {
         "heading": "See It In Action",
         "heading_size": "h1",
         "enable_video_looping": false,
         "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-        "description": "<p>Watch how our smart ring seamlessly integrates into your daily routine and provides valuable health insights that matter.</p>",
+        "description": "Watch how our smart ring seamlessly integrates into your daily routine and provides valuable health insights that matter.",
         "full_width": false,
         "color_scheme": "background-2",
         "padding_top": 48,
@@ -282,6 +279,7 @@
         "stat_3",
         "stat_4"
       ],
+      "disabled": true,
       "settings": {
         "title": "Trusted by 50,000+ Users Worldwide",
         "heading_size": "h1",
@@ -365,6 +363,7 @@
         "testimonial_2",
         "testimonial_3"
       ],
+      "disabled": true,
       "settings": {
         "title": "What Our Customers Say",
         "heading_size": "h1",
@@ -417,7 +416,6 @@
         "buttons_qUFTyT"
       ],
       "settings": {
-        "image": "shopify://shop_images/electronics-and-accessories-natural-3-middle.jpg",
         "image_overlay_opacity": 0,
         "image_height": "medium",
         "image_behavior": "zoom-in",
@@ -471,7 +469,6 @@
         "button_DJHkk6"
       ],
       "settings": {
-        "image": "shopify://shop_images/electronics-and-accessories-natural-5-bottom.jpg",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "text_first",
@@ -494,9 +491,9 @@
     "featured_collection",
     "video_section",
     "multicolumn_stats",
+    "image_banner_w4DFXc",
     "rich_text_kapxtX",
     "multicolumn_testimonials",
-    "image_banner_w4DFXc",
     "newsletter_signup",
     "image_with_text_cUp9Di"
   ]
