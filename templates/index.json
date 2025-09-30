@@ -342,6 +342,7 @@
         "heading_size": "h1",
         "enable_video_looping": false,
         "video_url": "https://youtu.be/STt5Q-RA8K8",
+        "cover_image": "shopify://shop_images/a-sleek-futuristic-smart-ring-showcased-on-a-glossy-black-surface-with-soft-glowing-neon-blue-accents-the-background-is-minimal-dark-gradient-fading-from-deep-black-at-the-bottom-to-a.png",
         "description": "Watch how our smart ring seamlessly integrates into your daily routine and provides valuable health insights that matter.",
         "full_width": false,
         "color_scheme": "background-2",
@@ -448,6 +449,7 @@
         "buttons_qUFTyT"
       ],
       "settings": {
+        "image": "shopify://shop_images/lifestyle-shot-of-a-person-s-hand-wearing-a-futuristic-smart-ring-with-holographic-neon-blue-projections-floating-around-the-hand-the-background-is-a-smooth-black-to-dark-gradient-wit.png",
         "image_overlay_opacity": 0,
         "image_height": "medium",
         "image_behavior": "zoom-in",
