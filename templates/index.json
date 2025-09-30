@@ -44,7 +44,7 @@
         "buttons_cNGBcm"
       ],
       "settings": {
-        "image": "shopify://shop_images/a-premium-futuristic-smart-ring-placed-on-a-reflective-black-pedestal-illuminated-by-soft-neon-blue-and-white-lighting-the-background-has-a-darker-upper-half-with-glowing-neon-blue-li.png",
+        "image": "shopify://shop_images/1.png",
         "image_overlay_opacity": 0,
         "image_height": "large",
         "image_behavior": "zoom-in",
@@ -63,7 +63,7 @@
         "slide_1": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/close-up-futuristic-smart-ring-glowing-with-holographic-neon-blue-ui-icons-heart-rate-sleep-tracker-steps-counter-notifications-ring-positioned-slightly-below-center-background-smooth.png",
+            "image": "shopify://shop_images/2.png",
             "image_overlay_opacity": 0,
             "heading": "Revolutionary Health Technology",
             "heading_size": "h1",
@@ -81,7 +81,7 @@
         "slide_2": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/premium-futuristic-smart-ring-displayed-slightly-lower-on-a-reflective-black-pedestal-illuminated-by-soft-neon-blue-and-white-spotlights-metallic-texture-with-fine-engraved-details-el.png",
+            "image": "shopify://shop_images/3.png",
             "image_overlay_opacity": 0,
             "heading": "Premium Craftsmanship",
             "heading_size": "h1",
@@ -99,7 +99,7 @@
         "slide_GykF8q": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/cinematic-lifestyle-render-of-a-hand-wearing-a-futuristic-smart-ring-projecting-glowing-neon-blue-holographic-data-charts-analytics-insights-slightly-off-center-hand-positioned-lower.png",
+            "image": "shopify://shop_images/4.png",
             "image_overlay_opacity": 0,
             "heading": "Intelligent Wellness Insights",
             "heading_size": "h1",
@@ -200,7 +200,6 @@
         "slide_rUCAVA": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/Screenshot_2025-09-18_234803.png",
             "image_overlay_opacity": 0,
             "heading": "",
             "heading_size": "h1",
@@ -218,7 +217,6 @@
         "slide_3FiMwN": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/Screenshot_2025-09-18_235112.png",
             "image_overlay_opacity": 0,
             "heading": "",
             "heading_size": "h1",
@@ -236,7 +234,6 @@
         "slide_dJbbUx": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/Screenshot_2025-09-18_234900.png",
             "image_overlay_opacity": 0,
             "heading": "",
             "heading_size": "h1",
@@ -254,7 +251,6 @@
         "slide_HeqDpX": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/Screenshot_2025-09-18_235222.png",
             "image_overlay_opacity": 0,
             "heading": "",
             "heading_size": "h1",
@@ -272,7 +268,6 @@
         "slide_7pTh6H": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/Screenshot_2025-09-18_235235.png",
             "image_overlay_opacity": 0,
             "heading": "",
             "heading_size": "h1",
@@ -295,6 +290,7 @@
         "slide_HeqDpX",
         "slide_7pTh6H"
       ],
+      "disabled": true,
       "name": "t:sections.slideshow.presets.name",
       "settings": {
         "layout": "full_bleed",
@@ -343,7 +339,6 @@
         "enable_video_looping": false,
         "video": "shopify://files/videos/VideoContent-For-Radian-0.75 - Made with Clipchamp.mp4",
         "video_url": "https://youtu.be/STt5Q-RA8K8",
-        "cover_image": "shopify://shop_images/a-sleek-futuristic-smart-ring-showcased-on-a-glossy-black-surface-with-soft-glowing-neon-blue-accents-the-background-is-minimal-dark-gradient-fading-from-deep-black-at-the-bottom-to-a.png",
         "description": "Watch how our smart ring seamlessly integrates into your daily routine and provides valuable health insights that matter.",
         "full_width": false,
         "color_scheme": "background-2",
@@ -450,7 +445,7 @@
         "buttons_qUFTyT"
       ],
       "settings": {
-        "image": "shopify://shop_images/lifestyle-shot-of-a-person-s-hand-wearing-a-futuristic-smart-ring-with-holographic-neon-blue-projections-floating-around-the-hand-the-background-is-a-smooth-black-to-dark-gradient-wit.png",
+        "image": "shopify://shop_images/5-LuxuryMeetsTech.png",
         "image_overlay_opacity": 0,
         "image_height": "medium",
         "image_behavior": "zoom-in",
