@@ -44,6 +44,7 @@
         "buttons_cNGBcm"
       ],
       "settings": {
+        "image": "shopify://shop_images/a-premium-futuristic-smart-ring-placed-on-a-reflective-black-pedestal-illuminated-by-soft-neon-blue-and-white-lighting-the-background-has-a-darker-upper-half-with-glowing-neon-blue-li.png",
         "image_overlay_opacity": 0,
         "image_height": "large",
         "image_behavior": "zoom-in",
@@ -62,6 +63,7 @@
         "slide_1": {
           "type": "slide",
           "settings": {
+            "image": "shopify://shop_images/close-up-futuristic-smart-ring-glowing-with-holographic-neon-blue-ui-icons-heart-rate-sleep-tracker-steps-counter-notifications-ring-positioned-slightly-below-center-background-smooth.png",
             "image_overlay_opacity": 0,
             "heading": "Revolutionary Health Technology",
             "heading_size": "h1",
@@ -79,6 +81,7 @@
         "slide_2": {
           "type": "slide",
           "settings": {
+            "image": "shopify://shop_images/premium-futuristic-smart-ring-displayed-slightly-lower-on-a-reflective-black-pedestal-illuminated-by-soft-neon-blue-and-white-spotlights-metallic-texture-with-fine-engraved-details-el.png",
             "image_overlay_opacity": 0,
             "heading": "Premium Craftsmanship",
             "heading_size": "h1",
@@ -96,6 +99,7 @@
         "slide_GykF8q": {
           "type": "slide",
           "settings": {
+            "image": "shopify://shop_images/cinematic-lifestyle-render-of-a-hand-wearing-a-futuristic-smart-ring-projecting-glowing-neon-blue-holographic-data-charts-analytics-insights-slightly-off-center-hand-positioned-lower.png",
             "image_overlay_opacity": 0,
             "heading": "Intelligent Wellness Insights",
             "heading_size": "h1",
